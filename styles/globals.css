@@ -21,7 +21,7 @@
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl;
+    @apply text-xl sm:text-4xl;
   }
 
   li {
@@ -29,6 +29,6 @@
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+    @apply rounded-xl p-2 uppercase bg-white text-black active:bg-slate-400;
   }
 }

@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../public/assets/logo.jpg";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { HiDocumentText } from "react-icons/hi";
-import { MdEmail } from "react-icons/md";
+import { socialicons } from "./Contact";
+import Socialcontacts from "./Socialcontacts";
 
 const Main = () => {
-  const [tip, setTip] = useState(false);
-  const [tip1, setTip1] = useState(false);
-  const [tip2, setTip2] = useState(false);
-  const [tip3, setTip3] = useState(false);
   return (
     <div className="w-full h-screen">
       <div className=" w-full h-full p-4 text-center flex items-center justify-between">
@@ -25,8 +20,12 @@ const Main = () => {
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.
           </p>
+          {/* scoial contact icons */}
           <div className="w-full flex items-center justify-center gap-4 relative">
-            <div
+            {socialicons.map((item) => (
+              <Socialcontacts item={item} />
+            ))}
+            {/* <div
               className="p-3 shadow-xl shadow-black/30 rounded-full cursor-pointer transition-transform hover:scale-125"
               onMouseEnter={() => setTip(!tip)}
               onMouseLeave={() => setTip(!tip)}
@@ -89,7 +88,7 @@ const Main = () => {
                 Resume
               </p>
               <HiDocumentText size={20} />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="hidden w-full lg:block">

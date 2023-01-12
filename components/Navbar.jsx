@@ -60,7 +60,7 @@ const Navbar = () => {
         className={
           mobile
             ? "fixed top-0 right-[-100%] w-full transition-all ease-in duration-500"
-            : " fixed top-0 right-0 w-full bg-white transition-all ease-in duration-500"
+            : " fixed z-30 top-0 right-0 w-full md:hidden bg-white transition-all ease-in duration-500"
         }
       >
         <div>
