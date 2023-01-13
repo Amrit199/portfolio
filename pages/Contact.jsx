@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Socialcontacts from "./Socialcontacts";
+import Socialcontacts from "../components/Socialcontacts";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDocumentText } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
@@ -68,7 +68,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="w-full h-full pt-24">
+    <div id="contact" className="w-full h-full pt-24">
       <h2 className="text-center my-4">CONTACT ME</h2>
       <div className="w-full text-center p-4 flex items-center justify-center gap-4 relative">
         {socialicons.map((item) => (

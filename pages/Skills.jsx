@@ -12,7 +12,7 @@ import nodejs from "../public/assets/skills/nodejs.png";
 import expressjs from "../public/assets/skills/expressjs.png";
 import tailwind from "../public/assets/skills/tailwind.png";
 
-import SkillCard from "./SkillCard";
+import SkillCard from "../components/SkillCard";
 import { AnimatePresence, motion } from "framer-motion";
 
 const logos1 = [
@@ -72,7 +72,7 @@ const logos2 = [
 const Skills = () => {
   return (
     <AnimatePresence>
-      <div className="w-full h-full lg:h-screen p-4 overflow-hidden my-5">
+      <div id="skills" className="w-full h-full lg:h-screen p-4 overflow-hidden my-5">
         <h2 className="text-center my-4">SKILLS</h2>
         <div className="w-full h-full flex items-center gap-8 justify-around lg:flex-col">
           <motion.div

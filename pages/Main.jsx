@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../public/assets/logo.jpg";
-import { socialicons } from "./Contact";
-import Socialcontacts from "./Socialcontacts";
+import { socialicons } from "../pages/Contact";
+import Socialcontacts from "../components/Socialcontacts";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen">
+    <div id="home" className="w-full h-screen">
       <div className=" w-full h-full p-4 text-center flex items-center justify-between">
         <div className="w-full">
           <p className="uppercase text-sm tracking-widest text-gray-600">
