@@ -5,22 +5,26 @@ import weather from '../public/assets/projects/weather.png'
 import webstudio from '../public/assets/projects/webstudio.png'
 import ProjectCard from '../components/ProjectCard'
 
-const porjectsImg = [
+export const porjectsImg = [
   {
     img: gallery,
-    name: "Image Gallery"
+    name: "Image Gallery",
+    link: "/Gallery",
   },
   {
     img: momo,
-    name: "MOMO"
+    name: "MOMO",
+    link: "/Momo",
   },
   {
     img: weather,
-    name: "Today's Weather"
+    name: "Today's Weather",
+    link: "/Weather",
   },
   {
     img: webstudio,
-    name: "Web Studio"
+    name: "Web Studio",
+    link: "/Webstudio",
   },
 ]
 
