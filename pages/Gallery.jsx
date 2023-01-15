@@ -6,6 +6,7 @@ import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind.png";
 import firebase from "../public/assets/skills/firebase.png";
 import pixabay from "../public/assets/projects/pixabay.png";
+import Link from "next/link";
 
 const Gallery = () => {
   return (
@@ -13,20 +14,30 @@ const Gallery = () => {
       <Navbar />
       <div className=" w-full h-full pt-24 px-5 md:px-8 lg:px-10 xl:px-14 pb-7 font font-playfair bg-black">
         <div className=" w-full h-full my-4 p-5 md:p-8 lg:p-10 xl:p-14 shadow-lg shadow-white bg-white flex flex-col gap-4">
+          {/* heading and intro */}
           <div className=" w-full text-center flex flex-col gap-4">
             <h1>Image Gallery</h1>
             <p>
-              Introducing our image gallery app, built using the latest
-              technologies of React, Tailwind, and Pixabay API. With this app,
-              users can easily search and browse through a wide variety of
-              beautiful images.
+              Introducing image gallery app, built using the latest technologies
+              of React, Tailwind, firebase and Pixabay API. With this app, users
+              can easily search and browse through a wide variety of beautiful
+              images.
             </p>
           </div>
-          <Image src={gallery} alt="gallery" className=" cursor-pointer transition-all border-4 border-white hover:border-black hover:border-4 active:border-green-600"/>
+          {/* project image */}
+          <Link href="https://gallery-react-tailwind-firebase.vercel.app/">
+            <Image
+              src={gallery}
+              alt="gallery"
+              className=" cursor-pointer transition-all border-4 border-white hover:border-black hover:border-4 active:border-green-600"
+            />
+          </Link>
+          {/* A brief description and technologies */}
           <div className=" w-full flex flex-col gap-4">
+            <h2>The Brief</h2>
             <div className="flex flex-col gap-3">
               <p>
-                The app is designed with a clean, minimalistic layout using the
+                This app is designed with a clean, minimalistic layout using the
                 popular CSS framework, Tailwind, making it easy for users to
                 navigate and find the perfect image for their needs.
               </p>
@@ -45,21 +56,41 @@ const Gallery = () => {
                 image has never been easier.
               </p>
               <div className="flex items-center justify-center gap-6 py-4">
-                <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
-                  Code
-                </button>
-                <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
-                  Demo
-                </button>
+                <Link href="https://github.com/Amrit199/gallery_react_tailwind_firebase">
+                  <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
+                    Code
+                  </button>
+                </Link>
+                <Link href="https://gallery-react-tailwind-firebase.vercel.app/">
+                  <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
+                    Demo
+                  </button>
+                </Link>
               </div>
             </div>
             <div>
               <h3>Technologies</h3>
               <div className="flex items-center gap-4">
-                <Image src={react} alt="react" className=" w-14 cursor-pointer transition-transform hover:scale-125"/>
-                <Image src={tailwind} alt="tailwind" className=" w-14 cursor-pointer transition-transform hover:scale-125"/>
-                <Image src={firebase} alt="firebase" className=" w-14 cursor-pointer transition-transform hover:scale-125"/>
-                <Image src={pixabay} alt="pixabay" className=" w-14 cursor-pointer transition-transform hover:scale-125"/>
+                <Image
+                  src={react}
+                  alt="react"
+                  className=" w-14 cursor-pointer transition-transform hover:scale-125"
+                />
+                <Image
+                  src={tailwind}
+                  alt="tailwind"
+                  className=" w-14 cursor-pointer transition-transform hover:scale-125"
+                />
+                <Image
+                  src={firebase}
+                  alt="firebase"
+                  className=" w-14 cursor-pointer transition-transform hover:scale-125"
+                />
+                <Image
+                  src={pixabay}
+                  alt="pixabay"
+                  className=" w-14 cursor-pointer transition-transform hover:scale-125"
+                />
               </div>
             </div>
           </div>

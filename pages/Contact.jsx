@@ -68,7 +68,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id="contact" className="w-full h-full pt-24">
+    <div id="contact" className="w-full h-full pt-16">
       <h2 className="text-center my-4">CONTACT ME</h2>
       <div className="w-full text-center p-4 flex items-center justify-center gap-4 relative">
         {socialicons.map((item) => (

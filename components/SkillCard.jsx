@@ -9,7 +9,7 @@ const SkillCard = ( {data} ) => {
         onMouseEnter={() => setTip(!tip)}
         onMouseLeave={() => setTip(!tip)}
         >
-        <p className={tip ? ' absolute p-3 bottom-24 lg:bottom-32 lg:text-xl rounded-xl shadow-lg text-black' : 'hidden'}>{data.name}</p>
+        <p className={tip ? ' absolute p-3 bottom-24 lg:bottom-28 lg:text-xl rounded-xl shadow-lg text-black' : 'hidden'}>{data.name}</p>
         <Image src={data.img} alt={data.name} className='w-28 p-3' />
     </div>
   )
