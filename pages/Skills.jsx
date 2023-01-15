@@ -72,25 +72,25 @@ const logos2 = [
 const Skills = () => {
   return (
     <AnimatePresence>
-      <div id="skills" className="w-full h-full lg:h-screen p-4 overflow-hidden my-5">
+      <div id="skills" className="w-full h-full pt-16 overflow-hidden">
         <h2 className="text-center my-4">SKILLS</h2>
-        <div className="w-full h-full flex items-center gap-8 justify-around lg:flex-col">
+        <div className="w-full h-full items-center lg:pt-10 pb-6 justify-between flex lg:flex-col">
           <motion.div
             className="w-full flex flex-col lg:flex-row items-center justify-center gap-6"
             initial={{ x: "100%" }}
-            whileInView={{ x: "0", }}
-            transition={{duration: 3}}
+            whileInView={{ x: "0" }}
+            transition={{ duration: 3 }}
           >
             {logos1.map((logo) => (
               <SkillCard data={logo} />
             ))}
           </motion.div>
-          <motion.div 
-            className="w-full flex flex-col lg:flex-row items-center justify-center gap-6"
+          <motion.div
+            className="w-full lg:my-14 flex flex-col lg:flex-row items-center justify-center gap-6"
             initial={{ x: "-100%" }}
-            whileInView={{ x: "0", }}
-            transition={{duration: 3}}
-            >
+            whileInView={{ x: "0" }}
+            transition={{ duration: 3 }}
+          >
             {logos2.map((logo) => (
               <SkillCard data={logo} />
             ))}
