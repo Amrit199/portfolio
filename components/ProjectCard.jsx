@@ -13,7 +13,6 @@ const ProjectCard = ({ item }) => {
       className="relative transition-transform hover:scale-110 shadow-xl shadow-gray-500"
       onMouseEnter={handleView}
       onMouseLeave={handleView}
-      key={item.id}
     >
       <div
         className={

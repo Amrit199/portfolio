@@ -33,8 +33,8 @@ const Projects = () => {
     <div id='projects' className='w-full h-full pt-16'>
       <h2 className='text-center my-4'>PROJECTS</h2>
       <div className='w-[90%] mx-auto bg-white p-8 flex items-center justify-center gap-14 flex-wrap'>
-          {porjectsImg.map((item) => (
-            <ProjectCard item={item} />
+          {porjectsImg.map((item, index) => (
+            <ProjectCard item={item} key={index}/>
           ))}
       </div>
     </div>

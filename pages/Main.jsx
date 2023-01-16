@@ -18,8 +18,8 @@ const Main = () => {
           </p>
           {/* scoial contact icons */}
           <div className="w-full flex items-center justify-center gap-4 relative">
-            {socialicons.map((item) => (
-              <Socialcontacts item={item} />
+            {socialicons.map((item, index) => (
+              <Socialcontacts item={item} key={index}/>
             ))}
             {/* <div
               className="p-3 shadow-xl shadow-black/30 rounded-full cursor-pointer transition-transform hover:scale-125"

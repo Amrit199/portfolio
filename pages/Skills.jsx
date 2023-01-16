@@ -81,8 +81,8 @@ const Skills = () => {
             whileInView={{ x: "0" }}
             transition={{ duration: 3 }}
           >
-            {logos1.map((logo) => (
-              <SkillCard data={logo} />
+            {logos1.map((logo, index) => (
+              <SkillCard data={logo} key={index} />
             ))}
           </motion.div>
           <motion.div
@@ -91,8 +91,8 @@ const Skills = () => {
             whileInView={{ x: "0" }}
             transition={{ duration: 3 }}
           >
-            {logos2.map((logo) => (
-              <SkillCard data={logo} />
+            {logos2.map((logo, index) => (
+              <SkillCard data={logo} key={index} />
             ))}
           </motion.div>
         </div>
