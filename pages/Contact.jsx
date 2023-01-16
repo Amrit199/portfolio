@@ -9,21 +9,25 @@ export const socialicons = [
     icon: BsLinkedin,
     name: "LINKEDIN",
     color: "0077B5",
+    link: "https://www.linkedin.com/in/amrit-tamangsi/",
   },
   {
     icon: BsGithub,
     name: "GITHUB",
     color: "171515",
+    link: "https://github.com/Amrit199",
   },
   {
     icon: HiDocumentText,
     name: "RESUME",
     color: "008000",
+    link: "/Resume",
   },
   {
     icon: MdEmail,
     name: "EMAIL",
     color: "c71610",
+    link: "/#contact",
   },
 ];
 

@@ -12,9 +12,9 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Hi, I&#39;m <span className="text-[#0077B5]">Amrit Tamang</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-2 text-gray-700">A Front-End Developer</h1>
           <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
-            I’m focused on building responsive web applications and websites.
+            I’m focused on building responsive web applications and websites that are visually pleasing.
           </p>
           {/* scoial contact icons */}
           <div className="w-full flex items-center justify-center gap-4 relative">
