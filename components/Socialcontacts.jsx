@@ -7,6 +7,7 @@ const Socialcontacts = ({ item }) => {
       className="p-3 shadow-xl shadow-black/30 rounded-full cursor-pointer transition-transform hover:scale-125"
       onMouseEnter={() => setTip(!tip)}
       onMouseLeave={() => setTip(!tip)}
+      key={item.id}
     >
       <p
         className={
