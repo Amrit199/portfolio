@@ -30,7 +30,7 @@ const About = () => {
             <h1>Who I Am</h1>
             <p className="text-xl">
               I am passionate for creating visually stunning and highly
-              functional websites. With a strong understanding of HTML, CSS and
+              functional web applications and websites. With a strong understanding of HTML, CSS and
               JavaScript, I have experience working with modern front-end
               frameworks and libraries such as React and Next.js. I am dedicated
               to staying up-to-date with the latest web developement trends and

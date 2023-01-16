@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Socialcontacts = ({ item }) => {
@@ -8,6 +9,7 @@ const Socialcontacts = ({ item }) => {
       onMouseEnter={() => setTip(!tip)}
       onMouseLeave={() => setTip(!tip)}
       key={item.id}
+      
     >
       <p
         className={
@@ -16,7 +18,9 @@ const Socialcontacts = ({ item }) => {
       >
         {item.name}
       </p>
+      <Link href={item.link}>
         <item.icon size={20} color={[item.color]}/>
+      </Link>
     </div>
   );
 };
