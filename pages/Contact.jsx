@@ -71,8 +71,8 @@ const Contact = () => {
     <div id="contact" className="w-full h-full pt-16">
       <h2 className="text-center my-4">CONTACT ME</h2>
       <div className="w-full text-center p-4 flex items-center justify-center gap-4 relative">
-        {socialicons.map((item) => (
-          <Socialcontacts item={item} />
+        {socialicons.map((item, index) => (
+          <Socialcontacts item={item} key={index}/>
         ))}
       </div>
       <form onSubmit={handleSubmit}>
