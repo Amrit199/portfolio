@@ -40,8 +40,9 @@ const Projects = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 3, delay: 0.5 }}
+              key={index}
             >
-              <ProjectCard item={item} key={index} />
+              <ProjectCard item={item} />
             </motion.div>
           ))}
         </div>
