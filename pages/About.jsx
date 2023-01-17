@@ -13,7 +13,7 @@ const About = () => {
             className=" hidden lg:block lg:w-full"
             initial={{ x: "-100%" }}
             whileInView={{ x: "0" }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 2 }}
           >
             <Image
               src={about}

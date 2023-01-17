@@ -79,7 +79,7 @@ const Skills = () => {
             className="w-full flex flex-col lg:flex-row items-center justify-center gap-6"
             initial={{ x: "100%" }}
             whileInView={{ x: "0" }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 2 }}
           >
             {logos1.map((logo, index) => (
               <SkillCard data={logo} key={index} />
@@ -89,7 +89,7 @@ const Skills = () => {
             className="w-full lg:my-14 flex flex-col lg:flex-row items-center justify-center gap-6"
             initial={{ x: "-100%" }}
             whileInView={{ x: "0" }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 2 }}
           >
             {logos2.map((logo, index) => (
               <SkillCard data={logo} key={index} />
