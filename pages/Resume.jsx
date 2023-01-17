@@ -27,20 +27,13 @@ const Resume = () => {
           </div>
           {/* profile description */}
           <div className=" w-full p-3 flex flex-col gap-3 text-center">
-            <h3>
-              PROVEN LEADERSHIP | WEB DEVELOPMENT | COMPLEX PROBLEM SOLVING
-            </h3>
+            <h3>FRONT-END DEVELOPER</h3>
             <p>
-              Analytical, innovative, and motivated web development professional
-              with experience in customer service, team leadership, and
-              organizational effectiveness in fast-paced and challenging
-              environments. Adept at developing strategies and driving
-              streamlined operations. Diverse analytical skills, team
-              collaboration, and relationship building. Consummate professional,
-              and motivated leader, with solid interpersonal abilities and
-              complex problem-solving skills. Effective and proven track record
-              of critical thinking, idea generation, and optimizing
-              efficiencies.
+              Passionate front-end developer with a master’s degree in computer
+              science. Skilled in developing modern web applications and
+              websites with years of experience. Capable of learning new
+              technologies and solving critical problems. Able to work well
+              under pressure and a good team player with a positive attitude.
             </p>
           </div>
           {/* experience */}
@@ -100,13 +93,17 @@ const Resume = () => {
                 proficiency both written and oral
               </li>
               <li>
-                <span className="font-bold">Nepali:</span> P Excellent skills, mother tongue
+                <span className="font-bold">Nepali:</span> P Excellent skills,
+                mother tongue
               </li>
               <li>
-                <span className="font-bold">Hindi:</span> Professional working proficiency both written and oral
+                <span className="font-bold">Hindi:</span> Professional working
+                proficiency both written and oral
               </li>
               <li>
-                <span className="font-bold">Bokmål Norsk:</span> Limited working proficiency, completed A1 and A2 from Oslo Metropolitan university
+                <span className="font-bold">Bokmål Norsk:</span> Limited working
+                proficiency, completed A1 and A2 from Oslo Metropolitan
+                university
               </li>
             </ul>
           </div>
