@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../public/assets/logo.jpg";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,12 +6,23 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [mobile, setMobile] = useState(false);
+  const [shadow, setShadow] = useState(false)
   const handleMenu = () => {
     setMobile(!mobile);
   };
+  useEffect(() => {
+    const handleShadow = () => {
+      if(window.scrollY >= 90) {
+        setShadow(true)
+      } else {
+        setShadow(false)
+      }
+    }
+    window.addEventListener('scroll', handleShadow)
+  }, [])
   return (
     <div className="w-full">
-      <div className="w-full h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between">
+      <div className={shadow ? "w-full shadow-lg shadow-gray-600 h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between" : "w-full h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"}>
         <div className="w-full">
           <Link href="/">
             <Image src={logo} alt="/" className="w-16 rounded-full object-fit" />

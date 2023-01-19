@@ -24,7 +24,7 @@ const Momo = () => {
             </p>
           </div>
           {/* project image */}
-          <Link href="https://gallery-react-tailwind-firebase.vercel.app/">
+          <Link href="https://momohub.vercel.app/">
             <Image
               src={momo}
               alt="momo"
@@ -51,12 +51,12 @@ const Momo = () => {
                 website, making it more engaging and interactive for the user.
               </p>
               <div className="flex items-center justify-center gap-6 py-4">
-                <Link href="https://github.com/Amrit199/gallery_react_tailwind_firebase">
+                <Link href="https://github.com/Amrit199/momohub">
                   <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
                     Code
                   </button>
                 </Link>
-                <Link href="https://gallery-react-tailwind-firebase.vercel.app/">
+                <Link href="https://momohub.vercel.app/">
                   <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
                     Demo
                   </button>

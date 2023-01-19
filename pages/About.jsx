@@ -25,7 +25,7 @@ const About = () => {
             className="w-full text-center flex flex-col gap-4 px-10 lg:p-1"
             initial={{ x: "100%" }}
             whileInView={{ x: "0" }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 2 }}
           >
             <h1>Who I Am</h1>
             <p className="text-xl">
