@@ -32,7 +32,7 @@ export const porjectsImg = [
 const Projects = () => {
   return (
     <AnimatePresence>
-      <div id="projects" className="w-full h-full pt-16">
+      <div id="Projects" className="w-full h-full pt-12">
         <h2 className="text-center my-4">PROJECTS</h2>
         <div className="w-[90%] mx-auto bg-white p-8 flex items-center justify-center gap-14 flex-wrap">
           {porjectsImg.map((item, index) => (

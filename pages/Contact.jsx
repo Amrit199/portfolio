@@ -72,7 +72,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id="contact" className="w-full h-full pt-16">
+    <div id="Contact" className="w-full h-full pt-12 mb-8">
       <h2 className="text-center my-4">CONTACT ME</h2>
       <div className="w-full text-center p-4 flex items-center justify-center gap-4 relative">
         {socialicons.map((item, index) => (
@@ -80,7 +80,7 @@ const Contact = () => {
         ))}
       </div>
       <form onSubmit={handleSubmit}>
-        <div className="w-[80%] md:w-[60%] lg:w-[50%] p-6 lg:p-6 shadow-xl shadow-gray-600 mx-auto flex flex-col items-center justify-between gap-4">
+        <div className="w-[80%] md:w-[60%] lg:w-[50%] rounded-lg p-6 lg:p-6 shadow-xl shadow-gray-600 mx-auto flex flex-col items-center justify-between gap-4">
           {/* {error ? <h2>Please fill the form</h2> : ""} */}
           <div className=" w-full flex flex-wrap items-center justify-between gap-4">
             <div className="w-full flex flex-col gap-1">

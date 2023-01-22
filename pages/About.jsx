@@ -6,7 +6,7 @@ import about from "../public/assets/about.jpg";
 const About = () => {
   return (
     <AnimatePresence>
-      <div id="about" className="w-full h-full pt-24 overflow-hidden">
+      <div id="About" className="w-full h-full pt-12 overflow-hidden">
         <h2 className="text-center my-4">ABOUT</h2>
         <div className="w-full h-full p-4 flex items-center justify-center">
           <motion.div

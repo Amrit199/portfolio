@@ -6,7 +6,7 @@ import Socialcontacts from "../components/Socialcontacts";
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen">
+    <div id="/" className="w-full h-screen">
       <div className=" w-full h-full p-4 text-center flex items-center justify-between">
         <div className="w-full">
           <h1 className="py-4 text-gray-700">

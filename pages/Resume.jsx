@@ -4,9 +4,8 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Resume = () => {
   return (
-    <div className=" w-full h-full">
-      <Navbar />
-      <div className=" w-full h-full pt-16 px-6">
+    <div id="Resume" className=" w-full h-full">
+      <div className=" w-full h-full pt-12 px-6">
         <h2 className=" text-center my-4">Resume</h2>
         <div className="w-[80%] h-full p-6 lg:px-10 mx-auto my-5 shadow-2xl shadow-gray-700 flex flex-col gap-4">
           {/* Name and icons */}
