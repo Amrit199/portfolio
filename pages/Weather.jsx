@@ -1,19 +1,26 @@
 import Image from "next/image";
 import React from "react";
-import Navbar from "../components/Navbar";
 import weather from "../public/assets/projects/weather.png";
 import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind.png";
 import geodb from "../public/assets/projects/geodb.png";
 import openweather from "../public/assets/projects/openweather.png";
 import Link from "next/link";
+import { BiArrowBack } from "react-icons/bi";
 
 const Weather = () => {
   return (
     <div>
-      <Navbar />
-      <div className=" w-full h-full pt-24 px-5 md:px-8 lg:px-10 xl:px-14 pb-7 font font-playfair bg-black">
-        <div className=" w-full h-full my-4 p-5 md:p-8 lg:p-10 xl:p-14 shadow-lg shadow-white bg-white flex flex-col gap-4">
+      <div className=" w-full h-full pt-5 px-5 md:px-8 lg:px-10 xl:px-14 pb-7 font font-playfair bg-slate-200">
+      <div className=" w-[80%] mx-auto">
+        <Link href="/">
+          <button className=" flex items-center gap-2 transition-all hover:scale-110 hover:bg-slate-300">
+            <BiArrowBack size={25} />
+            <p>Back</p>
+          </button>
+        </Link>
+        </div>
+        <div className=" w-[80%] mx-auto h-full my-4 p-5 md:p-8 lg:p-10 xl:p-14 shadow-lg shadow-gray-700 bg-white flex flex-col gap-4">
           {/* heading and intro */}
           <div className=" w-full text-center flex flex-col gap-4">
             <h1>Today's Weather</h1>

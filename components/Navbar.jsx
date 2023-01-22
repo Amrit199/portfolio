@@ -1,51 +1,77 @@
 import React, { useEffect, useState } from "react";
 import logo from "../public/assets/logo.jpg";
-import Link from "next/link";
+import { Link } from "react-scroll";
+// import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [mobile, setMobile] = useState(false);
-  const [shadow, setShadow] = useState(false)
+  const [shadow, setShadow] = useState(false);
   const handleMenu = () => {
     setMobile(!mobile);
   };
   useEffect(() => {
     const handleShadow = () => {
-      if(window.scrollY >= 90) {
-        setShadow(true)
+      if (window.scrollY >= 90) {
+        setShadow(true);
       } else {
-        setShadow(false)
+        setShadow(false);
       }
-    }
-    window.addEventListener('scroll', handleShadow)
-  }, [])
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
   return (
     <div className="w-full">
-      <div className={shadow ? "w-full shadow-lg shadow-gray-600 h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between" : "w-full h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"}>
+      <div
+        className={
+          shadow
+            ? "w-full shadow-lg shadow-gray-600 h-14 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"
+            : "w-full h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"
+        }
+      >
         <div className="w-full">
-          <Link href="/">
-            <Image src={logo} alt="/" className="w-16 rounded-full object-fit" />
+          <Link className=" cursor-pointer" to="/">
+            <Image
+              src={logo}
+              alt="/"
+              className="w-14 rounded-full object-fit"
+            />
           </Link>
         </div>
         {/* Nav link for < 800px screen */}
         <div className="w-full hidden md:flex items-center justify-between gap-3 text-xl">
-          <Link href="/" className="hover:bg-white p-2 rounded-xl">
+          <Link to="/" className="hover:bg-white p-2 rounded-xl cursor-pointer">
             Home
           </Link>
-          <Link href="/#about" className="hover:bg-white p-2 rounded-xl">
+          <Link
+            to="About"
+            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+          >
             About
           </Link>
-          <Link href="/#skills" className="hover:bg-white p-2 rounded-xl">
+          <Link
+            to="Skills"
+            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+          >
             Skills
           </Link>
-          <Link href="/#projects" className="hover:bg-white p-2 rounded-xl">
+          <Link
+            to="Projects"
+            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+          >
             Projects
           </Link>
-          <Link href="/Resume" className="hover:bg-white p-2 rounded-xl">
+          <Link
+            to="Resume"
+            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+          >
             Resume
           </Link>
-          <Link href="/#contact" className="hover:bg-white p-2 rounded-xl">
+          <Link
+            to="Contact"
+            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+          >
             Contact
           </Link>
         </div>
@@ -78,22 +104,46 @@ const Navbar = () => {
       >
         <div>
           <div className="flex flex-col items-center pt-20 justify-center gap-3 text-xl">
-            <Link href="/" className="hover:bg-white p-2 rounded-xl" onClick={handleMenu}>
+            <Link
+              to="/"
+              className="hover:bg-white p-2 rounded-xl cursor-pointer"
+              onClick={handleMenu}
+            >
               Home
             </Link>
-            <Link href="/#about" className="hover:bg-white p-2 rounded-xl" onClick={handleMenu}>
+            <Link
+              to="About"
+              className="hover:bg-white p-2 rounded-xl cursor-pointer"
+              onClick={handleMenu}
+            >
               About
             </Link>
-            <Link href="/#skills" className="hover:bg-white p-2 rounded-xl" onClick={handleMenu}>
+            <Link
+              to="Skills"
+              className="hover:bg-white p-2 rounded-xl cursor-pointer"
+              onClick={handleMenu}
+            >
               Skills
             </Link>
-            <Link href="/#projects" className="hover:bg-white p-2 rounded-xl" onClick={handleMenu}>
+            <Link
+              to="Projects"
+              className="hover:bg-white p-2 rounded-xl cursor-pointer"
+              onClick={handleMenu}
+            >
               Projects
             </Link>
-            <Link href="/Resume" className="hover:bg-white p-2 rounded-xl" onClick={handleMenu}>
+            <Link
+              to="Resume"
+              className="hover:bg-white p-2 rounded-xl cursor-pointer"
+              onClick={handleMenu}
+            >
               Resume
             </Link>
-            <Link href="/#contact" className="hover:bg-white p-2 rounded-xl" onClick={handleMenu}>
+            <Link
+              to="Contact"
+              className="hover:bg-white p-2 rounded-xl cursor-pointer"
+              onClick={handleMenu}
+            >
               Contact
             </Link>
           </div>

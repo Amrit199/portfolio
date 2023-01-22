@@ -72,8 +72,8 @@ const logos2 = [
 const Skills = () => {
   return (
     <AnimatePresence>
-      <div id="skills" className="w-full h-full pt-16 overflow-hidden">
-        <h2 className="text-center my-4">SKILLS</h2>
+      <div id="Skills" className="w-full h-full pt-16 overflow-hidden">
+        <h2 className="text-center mt-1 mb-4">SKILLS</h2>
         <div className="w-full h-full items-center lg:pt-10 pb-6 justify-between flex lg:flex-col">
           <motion.div
             className="w-full flex flex-col lg:flex-row items-center justify-center gap-6"
