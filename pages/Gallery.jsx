@@ -32,7 +32,7 @@ const Gallery = () => {
             </p>
           </div>
           {/* project image */}
-          <Link href="https://gallery-react-tailwind-firebase.vercel.app/">
+          <Link href="https://gallery-image-react-tailwind.vercel.app/">
             <Image
               src={gallery}
               alt="gallery"
@@ -63,12 +63,12 @@ const Gallery = () => {
                 image has never been easier.
               </p>
               <div className="flex items-center justify-center gap-6 py-4">
-                <Link href="https://github.com/Amrit199/gallery_react_tailwind_firebase">
+                <Link href="https://github.com/Amrit199/Gallery">
                   <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
                     Code
                   </button>
                 </Link>
-                <Link href="https://gallery-react-tailwind-firebase.vercel.app/">
+                <Link href="https://gallery-image-react-tailwind.vercel.app/">
                   <button className=" bg-black text-white px-4 transition-all hover:scale-110 hover:bg-black/80 font-bold">
                     Demo
                   </button>
