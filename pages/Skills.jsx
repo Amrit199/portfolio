@@ -1,5 +1,4 @@
 import React from "react";
-import bootstrap from "../public/assets/skills/bootstrap.png";
 import css from "../public/assets/skills/css.png";
 import html from "../public/assets/skills/html.png";
 import github from "../public/assets/skills/github.png";
@@ -7,11 +6,11 @@ import firebase from "../public/assets/skills/firebase.png";
 import javascript from "../public/assets/skills/javascript.png";
 import react from "../public/assets/skills/react.png";
 import redux from "../public/assets/skills/redux.png";
-import sass from "../public/assets/skills/sass.png";
 import nodejs from "../public/assets/skills/nodejs.png";
-import expressjs from "../public/assets/skills/expressjs.png";
 import tailwind from "../public/assets/skills/tailwind.png";
-
+import next from "../public/assets/skills/nextjs.svg";
+import material from "../public/assets/skills/materialUI.png";
+import figma from "../public/assets/skills/figma.png";
 import SkillCard from "../components/SkillCard";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -44,24 +43,24 @@ const logos1 = [
 
 const logos2 = [
   {
-    img: bootstrap,
-    name: "Bootstrap",
+    img: material,
+    name: "Material UI",
   },
   {
     img: tailwind,
     name: "Tailwind",
   },
   {
-    img: sass,
-    name: "SASS",
+    img: figma,
+    name: "Figma",
   },
   {
     img: redux,
     name: "Redux",
   },
   {
-    img: expressjs,
-    name: "ExpressJS",
+    img: next,
+    name: "NextJS",
   },
   {
     img: firebase,
