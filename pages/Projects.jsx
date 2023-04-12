@@ -2,6 +2,7 @@ import React from "react";
 import gallery from "../public/assets/projects/gallery.png";
 import momo from "../public/assets/projects/momo.png";
 import weather from "../public/assets/projects/weather.png";
+import wordpressportfolio from "../public/assets/projects/wordpressportfolio.png";
 import webstudio from "../public/assets/projects/webstudio.png";
 import ProjectCard from "../components/ProjectCard";
 import { AnimatePresence, motion } from "framer-motion";
@@ -21,6 +22,11 @@ export const porjectsImg = [
     img: weather,
     name: "Today's Weather",
     link: "/Weather",
+  },
+  {
+    img: wordpressportfolio,
+    name: "Portfolio Wordpress",
+    link: "/Portfolio",
   },
   {
     img: webstudio,
