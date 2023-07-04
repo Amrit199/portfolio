@@ -31,13 +31,15 @@ const Momo = () => {
             </p>
           </div>
           {/* project image */}
-          <Link href="https://momohub.vercel.app/">
+          <div className="w-full overflow-hidden">
+            <Link href="https://momohub.vercel.app/">
             <Image
               src={momo}
               alt="momo"
-              className=" cursor-pointer transition-all border-4 border-white hover:border-black hover:border-4 active:border-green-600"
+              className=" cursor-pointer transition-all hover:scale-110 duration-300 active:border-green-600"
             />
-          </Link>
+            </Link>
+          </div>
           {/* A brief description and technologies */}
           <div className=" w-full flex flex-col gap-4">
             <h2>The Brief</h2>
@@ -49,7 +51,7 @@ const Momo = () => {
               </p>
               <p>
                 React is used for the website's front-end development, ensuring
-                fast and smooth performance. Redux is used for state management,
+                fast and smooth performance. React Hooks are used for state management,
                 making it easy to handle the dynamic data such as menu items,
                 pricing and special offers.
               </p>

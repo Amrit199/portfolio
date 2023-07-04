@@ -1,4 +1,5 @@
 import React from "react";
+import accessiNor from "../public/assets/projects/accessiNor.png";
 import gallery from "../public/assets/projects/gallery.png";
 import momo from "../public/assets/projects/momo.png";
 import weather from "../public/assets/projects/weather.png";
@@ -8,6 +9,11 @@ import ProjectCard from "../components/ProjectCard";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const porjectsImg = [
+  {
+    img: accessiNor,
+    name: "AccessiNor",
+    link: "/AccessiNor",
+  },
   {
     img: gallery,
     name: "Image Gallery",
@@ -44,7 +50,7 @@ const Projects = () => {
           {porjectsImg.map((item, index) => (
             <motion.div
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 2, delay: 0.5 }}
               key={index}
             >

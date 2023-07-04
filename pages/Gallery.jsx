@@ -32,13 +32,15 @@ const Gallery = () => {
             </p>
           </div>
           {/* project image */}
+          <div className="w-full overflow-hidden">
           <Link href="https://gallery-image-react-tailwind.vercel.app/">
             <Image
               src={gallery}
               alt="gallery"
-              className=" cursor-pointer transition-all border-4 border-white hover:border-black hover:border-4 active:border-green-600"
+              className=" cursor-pointer transition-all hover:scale-110 active:border-green-600"
             />
           </Link>
+          </div>
           {/* A brief description and technologies */}
           <div className=" w-full flex flex-col gap-4">
             <h2>The Brief</h2>

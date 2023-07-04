@@ -29,13 +29,15 @@ const Webstudio = () => {
             </p>
           </div>
           {/* project image */}
-          <Link href="https://tamangamrit.com/">
+          <div className="w-full overflow-hidden">
+            <Link href="https://tamangamrit.com/">
             <Image
               src={wordpressportfolio}
-              alt="portfolio"
-              className=" cursor-pointer transition-all border-4 border-white hover:border-black hover:border-4 active:border-green-600"
+              alt="momo"
+              className=" cursor-pointer transition-all hover:scale-110 duration-300 active:border-green-600"
             />
-          </Link>
+            </Link>
+          </div>
           {/* A brief description and technologies */}
           <div className=" w-full flex flex-col gap-4">
             <h2>The Brief</h2>
