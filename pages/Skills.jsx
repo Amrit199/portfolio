@@ -77,7 +77,7 @@ const Skills = () => {
           <motion.div
             className="w-full flex flex-col lg:flex-row items-center justify-center gap-6"
             initial={{ x: "100%" }}
-            whileInView={{ x: "0" }}
+            animate={{ x: 0 }}
             transition={{ duration: 2 }}
           >
             {logos1.map((logo, index) => (
@@ -87,7 +87,7 @@ const Skills = () => {
           <motion.div
             className="w-full lg:my-14 flex flex-col lg:flex-row items-center justify-center gap-6"
             initial={{ x: "-100%" }}
-            whileInView={{ x: "0" }}
+            animate={{ x: 0 }}
             transition={{ duration: 2 }}
           >
             {logos2.map((logo, index) => (

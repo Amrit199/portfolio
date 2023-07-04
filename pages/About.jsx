@@ -12,8 +12,10 @@ const About = () => {
           <motion.div
             className=" hidden lg:block lg:w-full"
             initial={{ x: "-100%" }}
-            whileInView={{ x: "0" }}
+            animate={{ x: 0 }}
             transition={{ duration: 2 }}
+            // whileInView={{ x: "0" }}
+            // exit={{ x: "0"}}
           >
             <Image
               src={about}
@@ -24,8 +26,9 @@ const About = () => {
           <motion.div
             className="w-full text-center flex flex-col gap-4 px-10 lg:p-1"
             initial={{ x: "100%" }}
-            whileInView={{ x: "0" }}
             transition={{ duration: 2 }}
+            animate={{ x: 0}}
+            // whileInView={{ x: "0" }}
           >
             <h1>Who I Am</h1>
             <p className="text-xl">
