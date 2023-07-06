@@ -102,8 +102,8 @@ const Projects = () => {
                 "w-[80%] h-full mx-auto rounded-2xl shadow-2xl py-28 bg-white flex items-center justify-center gap-14 flex-wrap"
               )}
             >
-              {posts.projects.map((post) => (
-                <ProjectCard item={post} />
+              {posts.projects.map((post, id) => (
+                <ProjectCard key={id} item={post} />
               ))}
             </Tab.Panel>
           ))}
