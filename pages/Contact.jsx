@@ -1,35 +1,8 @@
 import React, { useState } from "react";
 import Socialcontacts from "../components/Socialcontacts";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { HiDocumentText } from "react-icons/hi";
-import { MdEmail } from "react-icons/md";
+import { Data } from "./data";
 
-export const socialicons = [
-  {
-    icon: BsLinkedin,
-    name: "LINKEDIN",
-    color: "0077B5",
-    link: "https://www.linkedin.com/in/amrit-tamangsi/",
-  },
-  {
-    icon: BsGithub,
-    name: "GITHUB",
-    color: "171515",
-    link: "https://github.com/Amrit199",
-  },
-  {
-    icon: HiDocumentText,
-    name: "RESUME",
-    color: "008000",
-    link: "/Resume",
-  },
-  {
-    icon: MdEmail,
-    name: "EMAIL",
-    color: "c71610",
-    link: "/#contact",
-  },
-];
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -72,15 +45,15 @@ const Contact = () => {
     }
   };
   return (
-    <div id="Contact" className="w-full h-full pt-12 mb-8">
-      <h2 className="text-center my-4">CONTACT ME</h2>
+    <div id="Contact" className="w-full h-full pt-20 mb-8">
+      <h1 className="text-center">CONTACT ME</h1>
       <div className="w-full text-center p-4 flex items-center justify-center gap-4 relative">
-        {socialicons.map((item, index) => (
+        {Data.socialicons.map((item, index) => (
           <Socialcontacts item={item} key={index}/>
         ))}
       </div>
       <form onSubmit={handleSubmit}>
-        <div className="w-[80%] md:w-[60%] lg:w-[50%] rounded-lg p-6 lg:p-6 shadow-xl shadow-gray-600 mx-auto flex flex-col items-center justify-between gap-4">
+        <div className="w-[95%] md:w-[60%] lg:w-[50%] rounded-lg p-4 shadow-xl shadow-gray-600 mx-auto flex flex-col items-center justify-between gap-4">
           {/* {error ? <h2>Please fill the form</h2> : ""} */}
           <div className=" w-full flex flex-wrap items-center justify-between gap-4">
             <div className="w-full flex flex-col gap-1">

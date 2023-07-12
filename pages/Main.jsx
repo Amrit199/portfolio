@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "../public/assets/logo.jpg";
 import { socialicons } from "../pages/Contact";
 import Socialcontacts from "../components/Socialcontacts";
+import { Data } from "./data";
 
 const Main = () => {
   return (
@@ -18,7 +19,7 @@ const Main = () => {
           </p>
           {/* scoial contact icons */}
           <div className="w-full flex items-center justify-center gap-4 relative">
-            {socialicons.map((item, index) => (
+            {Data.socialicons.map((item, index) => (
               <Socialcontacts item={item} key={index}/>
             ))}
             {/* <div
