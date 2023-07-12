@@ -4,13 +4,12 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Resume = () => {
   return (
-    <div id="Resume" className=" w-full h-full">
-      <div className=" w-full h-full pt-12 px-6">
-        <h2 className=" text-center my-4">Resume</h2>
-        <div className="w-[80%] h-full p-6 lg:px-10 mx-auto my-5 shadow-2xl shadow-gray-700 flex flex-col gap-4">
+    <div id="Resume" className=" w-full h-full pt-20">
+        <h1 className=" text-center pb-4">Resume</h1>
+        <div className="w-[90%] mx-auto h-full px-1 py-4 lg:px-10 shadow-2xl shadow-gray-700 flex flex-col gap-4 rounded-lg">
           {/* Name and icons */}
-          <div className="w-full p-3 bg-green-100 flex items-center justify-between">
-            <h1>Amrit Tamang</h1>
+          <div className="w-full p-1 bg-white flex items-center justify-between">
+            <h2>Amrit Tamang</h2>
             <div className="flex items-center justify-between gap-3">
               <BsLinkedin
                 size={30}
@@ -25,10 +24,10 @@ const Resume = () => {
             </div>
           </div>
           {/* profile description */}
-          <div className=" w-full p-3 flex flex-col gap-3 text-center">
+          <div className=" w-full p-1 flex flex-col gap-3 text-center">
             <h3>FRONT-END DEVELOPER</h3>
             <p>
-              Passionate front-end developer with a master’s degree in computer
+              Passionate front-end developer with a master&apos;s degree in computer
               science. Skilled in developing modern web applications and
               websites with years of experience. Capable of learning new
               technologies and solving critical problems. Able to work well
@@ -36,10 +35,10 @@ const Resume = () => {
             </p>
           </div>
           {/* experience */}
-          <div className=" w-full p-3 flex flex-col gap-1">
-            <h2 className="text-2xl text-center">EXPERIENCE</h2>
-            <div className="w-full bg-green-100 flex items-center justify-between">
-              <h3>Junior Frontend Developer</h3>
+          <div className=" w-full p-1 flex flex-col gap-1">
+            <h3 className="text-center">EXPERIENCE</h3>
+            <div className="w-full bg-white p-1 flex items-center justify-between">
+              <h4>Junior Frontend Developer</h4>
               <p>March 2016 - March 2017</p>
             </div>
             <p>Ultra Byte International, Kathmandu, Nepal</p>
@@ -64,35 +63,33 @@ const Resume = () => {
             </ul>
           </div>
           {/* education */}
-          <div className=" w-full p-3 flex flex-col gap-1">
-            <h2 className="text-2xl text-center">EDUCATION</h2>
+          <div className=" w-full p-1 flex flex-col gap-1">
+            <h3 className="text-center">EDUCATION</h3>
             <div className="w-full flex flex-col md:flex-row justify-between">
-              <h3 className="bg-green-100">
+              <h4 className="bg-white p-1">
                 Master's Degree in Universal Design of ICT
-              </h3>
+              </h4>
               <p>August 2017 - August 2019</p>
             </div>
             <p>Oslo Metropolitan University, Oslo, Norway</p>
-            <h3>Grade: C</h3>
             <div className="w-full flex flex-col md:flex-row justify-between">
-              <h3 className=" bg-green-100">
+              <h4 className=" bg-white p-1">
                 Bachelor's Degree in Information Management
-              </h3>
+              </h4>
               <p>March 2010 - March 2014</p>
             </div>
             <p>AWES - Institute of Management Studies, Kathmandu, Nepal</p>
-            <h3>Grade: B</h3>
           </div>
           {/* language skills */}
-          <div className=" w-full p-3 flex flex-col gap-1">
-            <h2 className="text-2xl text-center">LANGUAGE SKILLS</h2>
+          <div className=" w-full p-1 flex flex-col gap-1">
+            <h3 className=" text-center">LANGUAGE SKILLS</h3>
             <ul className=" text-start list-disc list-inside leading-6">
               <li>
                 <span className="font-bold">English:</span> Professional working
                 proficiency both written and oral
               </li>
               <li>
-                <span className="font-bold">Nepali:</span> P Excellent skills,
+                <span className="font-bold">Nepali:</span> Excellent skills,
                 mother tongue
               </li>
               <li>
@@ -107,7 +104,6 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-      </div>
     </div>
   );
 };

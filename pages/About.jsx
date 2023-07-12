@@ -6,9 +6,9 @@ import about from "../public/assets/about.jpg";
 const About = () => {
   return (
     <AnimatePresence>
-      <div id="About" className="w-full h-full pt-12 overflow-hidden">
-        <h2 className="text-center my-4">ABOUT</h2>
-        <div className="w-full h-full p-4 flex items-center justify-center">
+      <div id="About" className="w-full h-full pt-20 overflow-hidden">
+        <h1 className="text-center">ABOUT</h1>
+        <div className="w-full h-full p-6 flex items-center justify-center">
           <motion.div
             className=" hidden lg:block lg:w-full"
             initial={{ x: "-100%" }}
@@ -24,14 +24,14 @@ const About = () => {
             />
           </motion.div>
           <motion.div
-            className="w-full text-center flex flex-col gap-4 px-10 lg:p-1"
+            className="w-full text-center flex flex-col gap-4"
             initial={{ x: "100%" }}
             transition={{ duration: 2 }}
             animate={{ x: 0}}
             // whileInView={{ x: "0" }}
           >
-            <h1>Who I Am</h1>
-            <p className="text-xl">
+            <h2>Who I Am</h2>
+            <p className="text-base md:text-xl">
               I am passionate for creating visually stunning and highly
               functional web applications and websites. With a strong understanding of HTML, CSS and
               JavaScript, I have experience working with modern front-end
@@ -44,7 +44,7 @@ const About = () => {
               excellent communication skills and always willing to share my
               knowledge and collaborate with others to achieve a common goal.
             </p>
-            <p className="text-xl">
+            <p className="text-base md:text-xl">
               I have a Master's degree in Universal Design of ICT and Bachelor's
               degree in Information Management System. I have a experience of
               working as a junior front-end developer for a year and worked on

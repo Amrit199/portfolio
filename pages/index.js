@@ -5,9 +5,9 @@ import Navbar from '../components/Navbar'
 import Main from './Main'
 import About from './About'
 import Skills from './Skills'
-import Projects from './Projects'
 import Contact from './Contact'
 import Resume from './Resume'
+import Projects from './projects/page'
 
 
 const inter = Inter({ subsets: ['latin'] })

@@ -103,7 +103,7 @@ const Navbar = () => {
         }
       >
         <div>
-          <div className="flex flex-col items-center pt-20 justify-center gap-3 text-xl">
+          <div className="flex flex-col items-center pt-20 pb-4 justify-center gap-3 text-xl">
             <Link
               to="/"
               className="hover:bg-white p-2 rounded-xl cursor-pointer"
