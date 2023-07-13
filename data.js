@@ -331,4 +331,67 @@ export const Data = {
       ],
     },
   ],
+  
+  about: {
+    title: "Who I AM",
+    parag1: "I am passionate for creating visually stunning and highly functional web applications and websites. With a strong understanding of HTML, CSS and JavaScript, I have experience working with modern front-end frameworks and libraries such as React and Next.js. I am dedicated to staying up-to-date with the latest web developement trends and technologies, and always eager to learn new skills and improve my craft. I am highly motivated self-strater with a strong attention to detail and problem-solving skills. I am able to work well under pressure and a good team player with a positive attitude. I have a excellent communication skills and always willing to share my knowledge and collaborate with others to achieve a common goal.",
+    parag2: "I have a Master&#39;s degree in Universal Design of ICT and Bachelor&#39;s degree in Information Management System. I have a experience of working as a junior front-end developer for a year and worked on several personal projects to boost solid foundation in this field.", 
+  },
+
+  works: {
+    position: "Junior Frontend Developer",
+    start: "March 2016",
+    end: "March 2017",
+    company: "Ultra Byte International, Kathmandu, Nepal",
+    responsibilities: [
+      {
+        title: "Built 10+ fully responsive websites from scratch using HTML, CSS, and Javascript.",
+      },
+      {
+        title: "Optimized images and codes for a better user experience.",
+      },{
+        title: "Worked with a team of 8+ developers with agile methodology to boost productivity and teamwork.",
+      },
+      {
+        title: "Collaborated with designers to build new features of own company website",
+      },
+      {
+        title: "Participated with the senior developer to review codes and fix bugs in existing codes.",
+      },
+    ],
+  },
+
+  educations: [
+    {
+      degree: "Master's Degree in Universal Design of ICT",
+      start: "August 2017",
+      end: "August 2019",
+      university: "Oslo Metropolitan University, Oslo, Norway",
+    },
+    {
+      degree: "Bachelor's Degree in Information Management",
+      start: "March 2010",
+      end: "March 2014",
+      university: "AWES - Institute of Management Studies, Kathmandu, Nepal",
+    },
+  ],
+
+  languages: [
+    {
+      title: "Nepali",
+      level: "Excellent skills, mother tongue",
+    },
+    {
+      title: "English",
+      level: "Professional working proficiency both written and oral",
+    },
+    {
+      title: "Hindi",
+      level: "Professional working proficiency both written and oral",
+    },
+    {
+      title: "Bokmål Norsk",
+      level: "Limited working proficiency, completed A1 and A2",
+    },
+  ]
 };
