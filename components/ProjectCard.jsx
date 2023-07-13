@@ -29,7 +29,13 @@ const ProjectCard = ({ item }) => {
         </Link>
       </div>
       {/* <h1 className='absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white bg-black/80 p-4 rounded-xl'>{item.name}</h1> */}
-      <Image src={item.img} alt={item.name} className="w-full" width={512} height={512} />
+      <Image
+        src={item.img}
+        alt={item.name}
+        className="w-full"
+        width={512}
+        height={512}
+      />
     </div>
   );
 };
