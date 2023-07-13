@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Socialcontacts from "../components/Socialcontacts";
-import { Data } from "./data";
-
-
+import { Data } from "../data";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +47,7 @@ const Contact = () => {
       <h1 className="text-center">CONTACT ME</h1>
       <div className="w-full text-center p-4 flex items-center justify-center gap-4 relative">
         {Data.socialicons.map((item, index) => (
-          <Socialcontacts item={item} key={index}/>
+          <Socialcontacts item={item} key={index} />
         ))}
       </div>
       <form onSubmit={handleSubmit}>
