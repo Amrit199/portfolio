@@ -1,30 +1,30 @@
 // projects images
-import accessiNor from "../public/assets/projects/accessiNor.png";
-import gallery from "../public/assets/projects/gallery.png";
-import momo from "../public/assets/projects/momo.png";
-import weather from "../public/assets/projects/weather.png";
-import wordpressportfolio from "../public/assets/projects/wordpressportfolio.png";
-import webstudio from "../public/assets/projects/webstudio.png";
+import accessiNor from "./public/assets/projects/accessiNor.png";
+import gallery from "./public/assets/projects/gallery.png";
+import momo from "./public/assets/projects/momo.png";
+import weather from "./public/assets/projects/weather.png";
+import wordpressportfolio from "./public/assets/projects/wordpressportfolio.png";
+import webstudio from "./public/assets/projects/webstudio.png";
 
 // skills images
-import css from "../public/assets/skills/css.png";
-import html from "../public/assets/skills/html.png";
-import github from "../public/assets/skills/github.png";
-import firebase from "../public/assets/skills/firebase.png";
-import javascript from "../public/assets/skills/javascript.png";
-import react from "../public/assets/skills/react.png";
-import redux from "../public/assets/skills/redux.png";
-import nodejs from "../public/assets/skills/nodejs.png";
-import tailwind from "../public/assets/skills/tailwind.png";
-import next from "../public/assets/skills/nextjs.svg";
-import material from "../public/assets/skills/materialUI.png";
-import figma from "../public/assets/skills/figma.png";
-import typescript from "../public/assets/skills/typescript.png";
-import sanity from "../public/assets/skills/sanity.png";
-import sass from "../public/assets/projects/sass.png";
-import pixabay from "../public/assets/projects/pixabay.png";
-import framer from "../public/assets/projects/framer.png";
-import wordpress from "../public/assets/skills/wordpress.png";
+import css from "./public/assets/skills/css.png";
+import html from "./public/assets/skills/html.png";
+import github from "./public/assets/skills/github.png";
+import firebase from "./public/assets/skills/firebase.png";
+import javascript from "./public/assets/skills/javascript.png";
+import react from "./public/assets/skills/react.png";
+import redux from "./public/assets/skills/redux.png";
+import nodejs from "./public/assets/skills/nodejs.png";
+import tailwind from "./public/assets/skills/tailwind.png";
+import next from "./public/assets/skills/nextjs.svg";
+import material from "./public/assets/skills/materialUI.png";
+import figma from "./public/assets/skills/figma.png";
+import typescript from "./public/assets/skills/typescript.png";
+import sanity from "./public/assets/skills/sanity.png";
+import sass from "./public/assets/projects/sass.png";
+import pixabay from "./public/assets/projects/pixabay.png";
+import framer from "./public/assets/projects/framer.png";
+import wordpress from "./public/assets/skills/wordpress.png";
 
 // social icons
 import { BsLinkedin, BsGithub } from "react-icons/bs";

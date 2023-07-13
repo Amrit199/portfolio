@@ -2,7 +2,7 @@ import React from "react";
 import { Tab } from "@headlessui/react";
 
 import ProjectCard from "../../components/ProjectCard";
-import { Data } from "../data";
+import { Data } from "../../data";
 
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");

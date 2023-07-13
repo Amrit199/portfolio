@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Data } from "../data";
+import { Data } from "../../data";
 import { BiArrowBack } from "react-icons/bi";
 import Link from "next/link";
 import Image from "next/image";

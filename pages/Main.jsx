@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import logo from "../public/assets/logo.jpg";
 import Socialcontacts from "../components/Socialcontacts";
-import { Data } from "./data";
+import { Data } from "../data";
 
 const Main = () => {
   return (

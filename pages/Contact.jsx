@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Socialcontacts from "../components/Socialcontacts";
-import { Data } from "./data";
+import { Data } from "../data";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

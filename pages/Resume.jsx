@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Resume = () => {

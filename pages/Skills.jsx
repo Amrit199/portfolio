@@ -1,7 +1,8 @@
 import React from "react";
 import SkillCard from "../components/SkillCard";
-import { AnimatePresence, motion } from "framer-motion";
-import { Data } from "./data";
+import { AnimatePresence } from "framer-motion";
+import { Data } from "../data";
+
 
 const Skills = () => {
   return (
