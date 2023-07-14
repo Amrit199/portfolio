@@ -8,6 +8,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Resume from "./Resume";
 import Projects from "./projects/page";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Projects />
       <Resume />
       <Contact />
+      <Footer/>
     </>
   );
 }

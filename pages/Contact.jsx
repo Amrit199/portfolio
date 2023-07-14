@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Socialcontacts from "../components/Socialcontacts";
 import { Data } from "../data";
+import CustomInput from "../components/CustomInput";
+import CustomButton from "../components/CustomButton";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +23,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
     if (
       (formData.name,
       formData.mobile,
@@ -53,63 +54,46 @@ const Contact = () => {
       <form onSubmit={handleSubmit}>
         <div className="w-[95%] md:w-[60%] lg:w-[50%] rounded-lg p-4 shadow-xl shadow-gray-600 mx-auto flex flex-col items-center justify-between gap-4">
           {/* {error ? <h2>Please fill the form</h2> : ""} */}
-          <div className=" w-full flex flex-wrap items-center justify-between gap-4">
-            <div className="w-full flex flex-col gap-1">
-              <label>NAME</label>
-              <input
-                type="text"
-                className="p-3 border-2 rounded-lg"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="w-full flex flex-col gap-1">
-              <label>MOBILE NUMBER</label>
-              <input
-                type="text"
-                className="p-3 border-2 rounded-lg"
-                name="mobile"
-                value={formData.mobile}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className="w-full flex flex-col gap-1">
-            <label>EMAIL</label>
-            <input
+          <div className="w-full flex flex-col flex-wrap items-center justify-between gap-4">
+            <CustomInput
+              title="Name"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <CustomInput
+              title="Mobile Number"
+              type="text"
+              name="mobile"
+              value={formData.mobile}
+              onChange={handleChange}
+            />
+            <CustomInput
+              title="Email"
               type="email"
-              className="p-3 border-2 rounded-lg"
               value={formData.email}
               name="email"
               onChange={handleChange}
             />
-          </div>
-          <div className="w-full flex flex-col gap-1">
-            <label>SUBJECT</label>
-            <input
+            <CustomInput
+              title="Subject"
               type="text"
-              className="p-3 border-2 rounded-lg"
               value={formData.subject}
               name="subject"
               onChange={handleChange}
             />
+            <div className="w-full flex flex-col gap-1">
+              <label>MESSAGE</label>
+              <textarea
+                className="p-3 border-2 rounded-lg"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+            </div>
+            <CustomButton title="Send" type="submit" className="w-full text-lg font-medium bg-white hover:bg-green-50"/>
           </div>
-          <div className="w-full flex flex-col gap-1">
-            <label>MESSAGE</label>
-            <textarea
-              className="p-3 border-2 rounded-lg"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-            ></textarea>
-          </div>
-          <button
-            className="w-full transition-colors hover:bg-green-300"
-            type="subimt"
-          >
-            send message
-          </button>
         </div>
       </form>
     </div>
