@@ -5,6 +5,7 @@ import momo from "./public/assets/projects/momo.png";
 import weather from "./public/assets/projects/weather.png";
 import wordpressportfolio from "./public/assets/projects/wordpressportfolio.png";
 import webstudio from "./public/assets/projects/webstudio.png";
+import miljø from "./public/assets/projects/Miljø.png";
 
 // skills images
 import css from "./public/assets/skills/css.png";
@@ -41,6 +42,11 @@ export const Data = {
           img: accessiNor,
           name: "AccessiNor",
           link: "/AccessiNor",
+        },
+        {
+          img: miljø,
+          name: "Miljø",
+          link: "/Miljø",
         },
         {
           img: webstudio,
@@ -196,6 +202,29 @@ export const Data = {
         {
           img: sanity,
           alt: "Sanity",
+        },
+      ],
+    },
+    {
+      name: "Miljø",
+      title: "Miljø Renholdstjenester AS",
+      intro:
+        "Introducing web accessibility checker website, built using of NextJS, Tailwind, TypeScript and Sanity. This website is designed to provide an interactive and visually pleasing experience for users.",
+      img: miljø,
+      desc1:
+        "This app is designed with a clean, responsive layout using the Tailwind, making it easy for users to navigate.",
+      desc2:
+        "The Web Accessibility Checker is a comprehensive solution that automates the process of checking website accessibility. It offers a range of features that make it easier for users to identify and address potential accessibility issues. Leveraging the power of Next.js, TypeScript, Tailwind CSS, and Sanity, this tool provides a seamless and intuitive experience for users.",
+      code: "https://github.com/Amrit199/cleaning_website",
+      demo: "https://cleaning-website-beta.vercel.app/",
+      technologies: [
+        {
+          img: next,
+          alt: "NextJS",
+        },
+        {
+          img: tailwind,
+          alt: "Tailwind CSS",
         },
       ],
     },
