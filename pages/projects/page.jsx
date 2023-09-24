@@ -14,6 +14,7 @@ const Projects = () => {
       <h1 className="text-center">PROJECTS</h1>
       <Tab.Group>
         <Tab.List className="w-full md:w-[80%] mx-auto flex items-center justify-center rounded-xl gap-2 py-6">
+          {" "}
           {Data.projectsImg.map((category) => (
             <Tab
               key={category.name}
@@ -36,7 +37,7 @@ const Projects = () => {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "w-full md:w-[80%] h-full mx-auto rounded-2xl shadow-2xl px-6 py-14 bg-white flex flex-col md:flex-row items-center justify-center gap-14"
+                "w-full md:w-[95%] h-full mx-auto rounded-2xl shadow-2xl px-6 py-24 bg-white flex flex-col md:flex-row items-center justify-center gap-14"
               )}
             >
               {posts.projects.map((post, id) => (

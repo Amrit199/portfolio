@@ -48,11 +48,6 @@ export const Data = {
           name: "Miljø",
           link: "/Miljø",
         },
-        {
-          img: webstudio,
-          name: "WebStudio",
-          link: "/Webstudio",
-        },
       ],
     },
     {
@@ -90,6 +85,11 @@ export const Data = {
           img: wordpressportfolio,
           name: "PortfolioWordpress",
           link: "/Portfolio",
+        },
+        {
+          img: webstudio,
+          name: "WebStudio",
+          link: "/Webstudio",
         },
       ],
     },
