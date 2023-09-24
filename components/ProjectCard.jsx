@@ -32,9 +32,7 @@ const ProjectCard = ({ item }) => {
       <Image
         src={item.img}
         alt={item.name}
-        className="w-full"
-        width={512}
-        height={512}
+        className="w-[30rem]"
       />
     </div>
   );

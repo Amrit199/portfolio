@@ -41,7 +41,7 @@ export default function Project({}) {
         </div>
         {/* project image */}
         <div className="w-full overflow-hidden">
-          <Link href="https://accessinor-as.vercel.app/">
+          <Link href="https://cleaning-website-beta.vercel.app/">
             <Image
               src={project.img}
               alt="momo"
