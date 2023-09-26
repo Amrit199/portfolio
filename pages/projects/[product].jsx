@@ -4,6 +4,7 @@ import { BiArrowBack } from "react-icons/bi";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import ProductCard from "../../components/ProductCard";
 
 export default function Project({}) {
   const router = useRouter();
@@ -33,6 +34,7 @@ export default function Project({}) {
           </button>
         </Link>
       </div>
+      <ProductCard item={project}/>
       <div className="w-full md:w-[80%] mx-auto h-full my-4 p-5 md:p-8 lg:p-10 xl:p-14 shadow-lg shadow-gray-700 bg-white flex flex-col gap-4">
         {/* heading and intro */}
         <div className=" w-full text-center flex flex-col gap-4">
