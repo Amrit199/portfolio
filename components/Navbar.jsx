@@ -7,28 +7,48 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [mobile, setMobile] = useState(false);
-  const [shadow, setShadow] = useState(false);
+  // const [shadow, setShadow] = useState(false);
+  const [shadow, setShadow] = useState(null);
   const handleMenu = () => {
     setMobile(!mobile);
   };
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
+  // useEffect(() => {
+  //   const handleShadow = () => {
+  //     if (window.scrollY >= 90) {
+  //       setShadow(true);
+  //     } else {
+  //       setShadow(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleShadow);
+  // }, []);
+  useEffect(() =>{
+    let lastScrollY = window.scrollY
+
+    const updateScrollDirection = () => {
+      const moveY = window.scrollY
+      const direction = moveY > lastScrollY ? "down" : "up"
+      if (direction !== shadow && (moveY - lastScrollY > 10 || moveY - lastScrollY < -10)) {
+        setShadow(direction)
       }
-    };
-    window.addEventListener("scroll", handleShadow);
-  }, []);
+      lastScrollY = moveY > 0 ? moveY : 0
+    }
+    window.addEventListener("scroll", updateScrollDirection)
+    return () => {
+      window.addEventListener("scroll", updateScrollDirection)
+    }
+  }, [shadow])
+
+  console.log(shadow)
+  // className={
+        //   shadow
+        //     ? "w-full shadow-lg shadow-gray-600 h-14 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"
+        //     : "w-full h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"
+        // }
   return (
     <div className="w-full">
       <div
-        className={
-          shadow
-            ? "w-full shadow-lg shadow-gray-600 h-14 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"
-            : "w-full h-20 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"
-        }
+        className={`fixed ${shadow === "down" ? "-top-24" : "top-0"} w-full h-20 bg-[#ecf0f3] p-3 z-40 flex items-center justify-between shadow-lg shadow-gray-600 transition-all duration-500"`}
       >
         <div className="w-full">
           <Link className=" cursor-pointer" to="/">
