@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "../public/assets/logo.jpg";
 import Socialcontacts from "../components/Socialcontacts";
 import { Data } from "../data";
+import ParticlesContainer from "../components/ParticlesContainer";
 
 const Main = () => {
   return (
@@ -31,6 +32,10 @@ const Main = () => {
             className="max-w-lg rounded-full p-6 mx-auto"
           />
         </div>
+      </div>
+      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+        {/* bg can be added here */}
+        <ParticlesContainer />
       </div>
     </div>
   );
