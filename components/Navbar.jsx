@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className="w-full">
       <div
-        className={`fixed ${shadow === "down" ? "-top-24" : "top-0"} w-full h-20 bg-[#ecf0f3] p-3 z-40 flex items-center justify-between transition-all duration-500"`}
+        className={`fixed ${shadow === "down" ? "-top-24" : "top-0"} w-full h-20 bg-[#ecf0f3] text-gray-600 py-4 px-14 z-40 flex items-center justify-between transition-all duration-500"`}
       >
         <div className="w-full">
           <Link className=" cursor-pointer" to="/">
@@ -61,36 +61,36 @@ const Navbar = () => {
         </div>
         {/* Nav link for < 800px screen */}
         <div className="w-full hidden md:flex items-center justify-between gap-3 text-xl">
-          <Link to="/" className="hover:bg-white p-2 rounded-xl cursor-pointer">
+          <Link to="/" className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer">
             Home
           </Link>
           <Link
             to="About"
-            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+            className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
           >
             About
           </Link>
           <Link
             to="Skills"
-            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+            className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
           >
             Skills
           </Link>
           <Link
             to="Projects"
-            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+            className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
           >
             Projects
           </Link>
           <Link
             to="Resume"
-            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+            className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
           >
             Resume
           </Link>
           <Link
             to="Contact"
-            className="hover:bg-white p-2 rounded-xl cursor-pointer"
+            className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
           >
             Contact
           </Link>
