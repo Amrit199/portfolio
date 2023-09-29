@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectCard = ({ item }) => {
   const [view, setView] = useState(false);
@@ -9,32 +10,42 @@ const ProjectCard = ({ item }) => {
   };
   console.log(item.link);
   return (
+    <AnimatePresence>
     <div
-      className="relative transition-transform hover:scale-110 shadow-xl shadow-gray-500"
+      className="relative transition-transform delay-150 ease-in-out hover:scale-110 shadow-xl shadow-gray-500"
       onMouseEnter={handleView}
       onMouseLeave={handleView}
     >
       <div
         className={
           view
-            ? "absolute text-center top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white bg-black/80 p-4 rounded-xl"
+            ? "absolute text-center top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
             : "hidden"
         }
       >
+        <motion.div
+        initial={{ opacity: 0, y: -80 }}
+        whileInView={{ opacity: 1, y: 0, }}
+        exit={{ opacity: 0, y: -80}}
+        transition={{ duration: 1.5, ease: "easeInOut", type: 'tween' }}
+        className="text-white bg-black/80 p-4 lg:p-16 rounded-xl"
+        >
         <h2 className=" text-xl pb-2">{item.name}</h2>
         <Link href={`/projects/${item.name}`}>
           <button className="px-3 py-1 text-sm hover:bg-slate-300 active:bg-slate-600">
             see more
           </button>
         </Link>
+        </motion.div>
       </div>
       {/* <h1 className='absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white bg-black/80 p-4 rounded-xl'>{item.name}</h1> */}
       <Image
         src={item.img}
         alt={item.name}
-        className="w-[30rem]"
+        className="w-[40rem]"
       />
     </div>
+    </AnimatePresence>
   );
 };
 

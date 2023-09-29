@@ -34,8 +34,7 @@ export default function Project({}) {
           </button>
         </Link>
       </div>
-      <ProductCard item={project}/>
-      <div className="w-full md:w-[80%] mx-auto h-full my-4 p-5 md:p-8 lg:p-10 xl:p-14 shadow-lg shadow-gray-700 bg-white flex flex-col gap-4">
+      <div className="w-full md:w-[80%] mx-auto h-full my-4 p-5 md:p-8 lg:p-10 xl:p-14 shadow-lg shadow-gray-700 bg-white flex flex-col gap-10">
         {/* heading and intro */}
         <div className=" w-full text-center flex flex-col gap-4">
           <h1>{project.title}</h1>
@@ -43,7 +42,7 @@ export default function Project({}) {
         </div>
         {/* project image */}
         <div className="w-full overflow-hidden">
-          <Link href="https://cleaning-website-beta.vercel.app/">
+          <Link href={project.demo}>
             <Image
               src={project.img}
               alt="momo"
@@ -53,7 +52,7 @@ export default function Project({}) {
         </div>
         {/* A brief description and technologies */}
         <div className=" w-full flex flex-col gap-4">
-          <h2>The Brief</h2>
+          <h2>Intro</h2>
           <div className="flex flex-col gap-3">
             <p>{project.desc1}</p>
             <p>{project.desc2}</p>
