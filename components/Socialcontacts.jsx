@@ -5,7 +5,7 @@ const Socialcontacts = ({ item }) => {
   const [tip, setTip] = useState(false);
   return (
     <div
-      className="p-3 shadow-xl shadow-black/30 rounded-full cursor-pointer transition-transform hover:scale-125"
+      className="p-3 shadow-xl shadow-black/30 rounded-full cursor-pointer transition-transform hover:scale-125 z-50"
       onMouseEnter={() => setTip(!tip)}
       onMouseLeave={() => setTip(!tip)}
       key={item.id}

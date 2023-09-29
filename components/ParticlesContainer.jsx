@@ -10,7 +10,7 @@ const ParticlesContainer = () => {
 
     const particlesLoaded = useCallback(async () => {}, [])
   return (
-    <Particles className='w-full h-full absolute' id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={{
+    <Particles className='w-full h-full absolute z-0' id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={{
         fullScreen: {enable: false},
         background: {
             color: {
@@ -42,18 +42,18 @@ const ParticlesContainer = () => {
         },
         particles: {
             color: {
-                value: '#e68e2e',
+                value: '#0077B5',
             },
-            links: {
-                color: '#f5d393',
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1
-            },
-            collisions: {
-                enable: true,
-            },
+            // links: {
+            //     color: '#0077B5',
+            //     distance: 150,
+            //     enable: true,
+            //     opacity: 0.5,
+            //     width: 1
+            // },
+            // collisions: {
+            //     enable: true,
+            // },
             move: {
                 direction: 'none',
                 enable: true,
@@ -75,7 +75,7 @@ const ParticlesContainer = () => {
                 value: 0.5,
             },
             shape: {
-                type: 'circle'
+                type: 'star'
             },
             size: {
                 value: {min: 1, max: 5}

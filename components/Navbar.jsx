@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className="w-full">
       <div
-        className={`fixed ${shadow === "down" ? "-top-24" : "top-0"} w-full h-20 bg-[#ecf0f3] p-3 z-40 flex items-center justify-between shadow-lg shadow-gray-600 transition-all duration-500"`}
+        className={`fixed ${shadow === "down" ? "-top-24" : "top-0"} w-full h-20 bg-[#ecf0f3] p-3 z-40 flex items-center justify-between transition-all duration-500"`}
       >
         <div className="w-full">
           <Link className=" cursor-pointer" to="/">

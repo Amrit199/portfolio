@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         playfair: ["Roboto", "sans-serif"],
       },
+      backgroundImage: {
+        flame: 'url("/flame.png")'
+      }
     },
   },
   plugins: [

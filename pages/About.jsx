@@ -12,11 +12,11 @@ const About = () => {
         <div className="w-full h-full p-6 flex items-center justify-center">
           <motion.div
             className=" hidden lg:block lg:w-full"
-            initial={{ x: "-100%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 2 }}
-            // whileInView={{ x: "0" }}
-            // exit={{ x: "0"}}
+            initial={{ opacity: 0, y: -80 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, ease: "easeInOut", type: 'tween' }}
+            // whileInView={{ opacity: 1, y: 0, repeatCount: 0 }}
+            // exit={{ opacity: 0, y: -80}}
           >
             <Image
               src={about}
@@ -26,9 +26,10 @@ const About = () => {
           </motion.div>
           <motion.div
             className="w-full text-center flex flex-col gap-4"
-            initial={{ x: "100%" }}
-            transition={{ duration: 2 }}
-            animate={{ x: 0 }}
+            initial={{ opacity: 0, y: 80 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit="hidden"
+            transition={{ duration: 2, ease: "easeInOut", type: 'tween' }}
             // whileInView={{ x: "0" }}
           >
             <h2>{Data.about.title}</h2>

@@ -169,7 +169,7 @@ export const Data = {
       icon: MdEmail,
       name: "EMAIL",
       color: "c71610",
-      link: "/#contact",
+      link: "/",
     },
   ],
 
@@ -181,9 +181,9 @@ export const Data = {
         "Introducing web accessibility checker website, built using of NextJS, Tailwind, TypeScript and Sanity. This website is designed to provide an interactive and visually pleasing experience for users.",
       img: accessiNor,
       desc1:
-        "This app is designed with a clean, responsive layout using the Tailwind, making it easy for users to navigate.",
+        "AccessiNor is a Startups company which offers, a comprehensive web accessibility checker. This innovative product has been carefully designed to assist website owners and developers in ensuring compliance with both web accessibility standards and the stringent regulations set by the Norwegian government. Web accessibility checker goes beyond standard compliance checks by incorporating user experience and design considerations, with the ultimate aim of making the web more inclusive for all users",
       desc2:
-        "The Web Accessibility Checker is a comprehensive solution that automates the process of checking website accessibility. It offers a range of features that make it easier for users to identify and address potential accessibility issues. Leveraging the power of Next.js, TypeScript, Tailwind CSS, and Sanity, this tool provides a seamless and intuitive experience for users.",
+        "",
       code: "https://github.com/Amrit199/accessinor_as",
       demo: "https://accessinor-as.vercel.app/",
       technologies: [
@@ -212,9 +212,9 @@ export const Data = {
         "Introducing web accessibility checker website, built using of NextJS, Tailwind, TypeScript and Sanity. This website is designed to provide an interactive and visually pleasing experience for users.",
       img: miljø,
       desc1:
-        "This app is designed with a clean, responsive layout using the Tailwind, making it easy for users to navigate.",
+        "Miljø Renholdtjenester AS a cleaning company located in center of Oslo. Primary focus of this company is to provide high quality cleaning solutions and adaptable expertise that covers a wide range of commercial environments. Service offers in various locations including busy shopping malls, health clinics, restaurants, canteens, offices and shops.",
       desc2:
-        "The Web Accessibility Checker is a comprehensive solution that automates the process of checking website accessibility. It offers a range of features that make it easier for users to identify and address potential accessibility issues. Leveraging the power of Next.js, TypeScript, Tailwind CSS, and Sanity, this tool provides a seamless and intuitive experience for users.",
+        "",
       code: "https://github.com/Amrit199/cleaning_website",
       demo: "https://cleaning-website-beta.vercel.app/",
       technologies: [
