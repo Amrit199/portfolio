@@ -13,10 +13,9 @@ const About = () => {
           <motion.div
             className=" hidden lg:block lg:w-full"
             initial={{ opacity: 0, y: -80 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2, ease: "easeInOut", type: 'tween' }}
-            // whileInView={{ opacity: 1, y: 0, repeatCount: 0 }}
-            // exit={{ opacity: 0, y: -80}}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut", type: 'tween' }}
+            viewport={{ once: true }}
           >
             <Image
               src={about}
@@ -27,10 +26,9 @@ const About = () => {
           <motion.div
             className="w-full text-center flex flex-col gap-4"
             initial={{ opacity: 0, y: 80 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit="hidden"
-            transition={{ duration: 2, ease: "easeInOut", type: 'tween' }}
-            // whileInView={{ x: "0" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut", type: 'tween' }}
+            viewport={{ once: true }}
           >
             <h2>{Data.about.title}</h2>
             <p className="text-base md:text-xl">{Data.about.parag1}</p>

@@ -5,7 +5,7 @@ import momo from "./public/assets/projects/momo.png";
 import weather from "./public/assets/projects/weather.png";
 import wordpressportfolio from "./public/assets/projects/wordpressportfolio.png";
 import webstudio from "./public/assets/projects/webstudio.png";
-import miljø from "./public/assets/projects/Miljø.png";
+import miljø from "./public/assets/projects/Miljo.png";
 
 // skills images
 import css from "./public/assets/skills/css.png";
