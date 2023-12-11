@@ -1,5 +1,4 @@
 import React from "react";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { Data } from "../data";
 import Socialcontacts from "../components/Socialcontacts";
 

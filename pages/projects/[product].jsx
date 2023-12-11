@@ -4,7 +4,6 @@ import { BiArrowBack } from "react-icons/bi";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import ProductCard from "../../components/ProductCard";
 
 export default function Project({}) {
   const router = useRouter();
@@ -19,7 +18,6 @@ export default function Project({}) {
       setProject(fetchedProject);
     }
   }, [product]);
-  console.log({ product });
 
   if (!project) {
     return <div>Loading.....</div>;
