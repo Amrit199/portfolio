@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Resume from "./Resume";
 import Projects from "./projects/page";
 import Footer from "../components/Footer";
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function Home() {
       <Resume />
       <Contact />
       <Footer />
+      <SpeedInsights />    
     </>
   );
 }
