@@ -1,4 +1,5 @@
 // projects images
+import receel from "./public/assets/projects/receel.png";
 import accessiNor from "./public/assets/projects/accessiNor.png";
 import gallery from "./public/assets/projects/gallery.png";
 import momo from "./public/assets/projects/momo.png";
@@ -35,9 +36,14 @@ import { MdEmail } from "react-icons/md";
 export const Data = {
   projectsImg: [
     {
-      id: "startUps",
-      name: "StartUps",
+      id: "webdevelopment",
+      name: "Web Development",
       projects: [
+        {
+          img: receel,
+          name: "Receel",
+          link: "/Receel",
+        },
         {
           img: accessiNor,
           name: "AccessiNor",
@@ -48,11 +54,21 @@ export const Data = {
           name: "Miljø",
           link: "/Miljø",
         },
+        {
+          img: momo,
+          name: "MOMO",
+          link: "/Momo",
+        },
+        {
+          img: webstudio,
+          name: "WebStudio",
+          link: "/Webstudio",
+        },
       ],
     },
     {
-      id: "portfolio",
-      name: "portfolio",
+      id: "mobile",
+      name: "Mobile",
       projects: [
         {
           img: gallery,
@@ -63,33 +79,6 @@ export const Data = {
           img: weather,
           name: "TodaysWeather",
           link: "/Weather",
-        },
-      ],
-    },
-    {
-      id: "ecommerce",
-      name: "Ecommerce",
-      projects: [
-        {
-          img: momo,
-          name: "MOMO",
-          link: "/Momo",
-        },
-      ],
-    },
-    {
-      id: "cms",
-      name: "CMS",
-      projects: [
-        {
-          img: wordpressportfolio,
-          name: "PortfolioWordpress",
-          link: "/Portfolio",
-        },
-        {
-          img: webstudio,
-          name: "WebStudio",
-          link: "/Webstudio",
         },
       ],
     },
@@ -163,7 +152,7 @@ export const Data = {
       icon: HiDocumentText,
       name: "RESUME",
       color: "008000",
-      link: "/Resume",
+      link: "/",
     },
     {
       icon: MdEmail,
@@ -174,6 +163,33 @@ export const Data = {
   ],
 
   projects: [
+    {
+      name: "Receel",
+      title: "Receel AS",
+      intro:
+        "Introducing solar panel and equipments e-website, built using of NextJS, Tailwind, stripe and Sanity.io. This website is designed to provide an interactive and visually pleasing experience for users.",
+      img: receel,
+      desc1:
+        "Receel is a suppliers of solar panel and its necessary equipements such as inverter, battery, regulator, etc. This online store has been carefully designed to provide products informations effectively and efficiently to the customers.",
+      desc2:
+        "",
+      code: "https://github.com/Amrit199/receel",
+      demo: "https://receel.no/",
+      technologies: [
+        {
+          img: next,
+          alt: "NextJS",
+        },
+        {
+          img: tailwind,
+          alt: "Tailwind CSS",
+        },
+        {
+          img: sanity,
+          alt: "Sanity",
+        },
+      ],
+    },
     {
       name: "AccessiNor",
       title: "AccessiNor AS",
@@ -367,41 +383,45 @@ export const Data = {
     parag2: "I have a Master&#39;s degree in Universal Design of ICT and Bachelor&#39;s degree in Information Management System. I have a experience of working as a junior front-end developer for a year and worked on several personal projects to boost solid foundation in this field.", 
   },
 
-  works: {
-    position: "Junior Frontend Developer",
-    start: "March 2016",
-    end: "March 2017",
-    company: "Ultra Byte International, Kathmandu, Nepal",
-    responsibilities: [
-      {
-        title: "Built 10+ fully responsive websites from scratch using HTML, CSS, and Javascript.",
-      },
-      {
-        title: "Optimized images and codes for a better user experience.",
-      },{
-        title: "Worked with a team of 8+ developers with agile methodology to boost productivity and teamwork.",
-      },
-      {
-        title: "Collaborated with designers to build new features of own company website",
-      },
-      {
-        title: "Participated with the senior developer to review codes and fix bugs in existing codes.",
-      },
-    ],
-  },
+  works: [
+    {
+      year: "May 2023 - Present",
+      company: "AccessiNor AS",
+      role: "Frontend Developer",
+      location: "Oslo, Norway",
+      responsibility: "Web developement, Visual Design, E-commerce developement, CMS, Project Management, Responsive web design",
+      skills: "Nextjs, Tailwind CSS, Sanity, Nodejs, Expressjs, TypeScript, MUI"
+    },
+    {
+      year: "March 2016 - March 2017",
+      company: "Ultrabyte International Pvt. Ltd",
+      role: "Junior Frontend Developer",
+      location: "Kathmandu, Nepal",
+      responsibility: "Responsive web design, web design, web development",
+      skills: "HTML, CSS, JavaScript, Reactjs"
+    },
+    {
+      year: "Jul 2014 - Feb 2016",
+      company: "Nepal Bayern Electric Pvt. Ltd",
+      role: "Junior Assistant",
+      location: "Kathmandu, Nepal",
+      responsibility: "",
+      skills: "Teamwork, Technical Support, Maintenance & Repair, Microsoft Office"
+    },
+  ],
 
   educations: [
     {
       degree: "Master's Degree in Universal Design of ICT",
-      start: "August 2017",
-      end: "August 2019",
-      university: "Oslo Metropolitan University, Oslo, Norway",
+      year: "August 2017 - August 2019",
+      location: "Oslo, Norway",
+      university: "Oslo Metropolitan University",
     },
     {
       degree: "Bachelor's Degree in Information Management",
-      start: "March 2010",
-      end: "March 2014",
-      university: "AWES - Institute of Management Studies, Kathmandu, Nepal",
+      year: "March 2010 - March 2014",
+      location: "Kathmandu, Nepal",
+      university: "AWES - Institute of Management Studies",
     },
   ],
 

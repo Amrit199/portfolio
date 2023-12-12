@@ -37,7 +37,7 @@ const Projects = () => {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "w-full md:w-[95%] h-full mx-auto rounded-2xl shadow-2xl px-6 py-16 bg-white flex flex-col md:flex-row items-center justify-center gap-14"
+                "w-full md:w-[95%] h-full mx-auto rounded-2xl shadow-2xl px-6 py-16 lg:py-20 bg-white flex flex-col md:flex-row items-center justify-center gap-14 flex-wrap"
               )}
             >
               {posts.projects.map((post, id) => (

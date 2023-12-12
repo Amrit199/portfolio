@@ -52,6 +52,7 @@ export default function Project({}) {
         <div className=" w-full flex flex-col gap-4">
           <h2>Intro</h2>
           <div className="flex flex-col gap-3">
+            <p>{project.intro}</p>
             <p>{project.desc1}</p>
             <p>{project.desc2}</p>
             <div className="flex items-center justify-center gap-6 py-4">
