@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.15",
     "@mui/icons-material": "^5.11.0",
     "@next/font": "13.1.1",
@@ -19,10 +20,12 @@
     "nodemailer": "^6.9.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.49.0",
     "react-icons": "^4.7.1",
     "react-scroll": "^1.8.9",
     "react-tsparticles": "^2.12.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "sweetalert2": "^11.10.1",
     "swiper": "^11.0.5",
     "tsparticles": "^2.12.0",
     "tsparticles-engine": "^2.12.0"
