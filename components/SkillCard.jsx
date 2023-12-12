@@ -8,7 +8,7 @@ const SkillCard = ({ data }) => {
       <motion.div
         whileHover={{ rotate: 360 }}
         transition={{ duration: 1, ease: "circInOut" }}
-        className="p-2 shadow-xl shadow-gray-500 cursor-pointer transition-transform hover:scale-110"
+        className="p-2 shadow-xl shadow-gray-500 cursor-pointer transition-transform hover:scale-110 rounded-xl"
         key={data.id}
       >
         <Image

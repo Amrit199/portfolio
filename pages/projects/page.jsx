@@ -20,7 +20,7 @@ const Projects = () => {
               key={category.name}
               className={({ selected }) =>
                 classNames(
-                  "rounded-lg py-2 text-sm font-medium",
+                  "rounded-lg py-2 text-lg font-medium",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-white shadow"
