@@ -11,7 +11,7 @@ const ProjectCard = ({ item }) => {
   console.log(item.link);
   return (
     <AnimatePresence>
-    <div
+    {/* <div
       className="relative transition-transform delay-150 ease-in-out hover:scale-110 shadow-xl shadow-gray-500 rounded-xl"
       onMouseEnter={handleView}
       onMouseLeave={handleView}
@@ -42,6 +42,15 @@ const ProjectCard = ({ item }) => {
         alt={item.name}
         className="w-[30rem] rounded-xl"
       />
+    </div> */}
+    <div className=" w-full h-full transition-transform delay-150 ease-in-out hover:scale-110 shadow-xl shadow-gray-500 hover:border-[#0077B5]">
+    <Link href={`/projects/${item.name}`}>
+    <Image
+        src={item.img}
+        alt={item.name}
+        className="w-[30rem]"
+      />
+        </Link>
     </div>
     </AnimatePresence>
   );

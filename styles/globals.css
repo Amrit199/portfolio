@@ -21,7 +21,7 @@ html {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway];
+    @apply text-4xl md:text-5xl font-[Raleway];
   }
 
   h2 {

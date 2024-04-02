@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <AnimatePresence>
       <div id="Skills" className="w-full h-full pt-20 md:py-28 overflow-hidden">
-        <h1 className="text-center">SKILLS</h1>
+        <h1 className="text-center text">SKILLS</h1>
         <motion.div
         initial={{ opacity: 0, y: -80 }}
         whileInView={{ opacity: 1, y: 0 }}
