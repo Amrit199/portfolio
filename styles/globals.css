@@ -21,11 +21,11 @@ html {
   }
 
   h1 {
-    @apply text-4xl md:text-5xl font-[Raleway];
+    @apply text-4xl font-[Raleway];
   }
 
   h2 {
-    @apply text-xl sm:text-4xl;
+    @apply text-xl md:text-2xl;
   }
 
   li {
