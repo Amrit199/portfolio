@@ -9,8 +9,8 @@ import { AnimatePresence, motion } from "framer-motion";
 const Main = () => {
   return (
     <AnimatePresence>
-      <div id="/" className="w-full h-screen">
-        <div className=" w-full h-full text-center flex items-center justify-between">
+      <div id="/" className="w-full h-full md:h-screen flex items-center justify-center">
+        <div className=" w-full h-full py-32 px-4 md:py-3 md:px-3 text-center flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0, y: -80 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,18 +40,6 @@ const Main = () => {
             transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
             className="h-full hidden w-full lg:flex lg:items-center relative"
           >
-            <div
-              className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu blur-2xl sm:top-[8rem]"
-              aria-hidden="true"
-            >
-              <div
-                className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[-15deg] bg-[#a0cfe8] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-                style={{
-                  clipPath:
-                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                }}
-              />
-            </div>
             <Image
               src={logo}
               alt="User"

@@ -405,9 +405,9 @@ export const Data = {
   about: {
     title: "About myself",
     parag1:
-      "I am passionate for creating visually stunning and highly functional web applications and websites. With a strong understanding of HTML, CSS and JavaScript, I have experience working with modern front-end frameworks and libraries such as React and Next.js. I am dedicated to staying up-to-date with the latest web developement trends and technologies, and always eager to learn new skills and improve my craft. I am highly motivated self-strater with a strong attention to detail and problem-solving skills. I am able to work well under pressure and a good team player with a positive attitude. I have a excellent communication skills and always willing to share my knowledge and collaborate with others to achieve a common goal.",
+      "I am deeply passionate about creating digital solutions that streamline user access to information. My work ethic is characterized by strong self-motivation, attention to detail, effective communication, and problem-solving skills. I actively seek opportunities to share my knowledge and collaborate towards achieving common objectives.",
     parag2:
-      "I have a Master's degree in Universal Design of ICT and Bachelor's degree in Information Management System. I have a experience of working as a junior front-end developer for a year and worked on several personal projects to boost solid foundation in this field.",
+      "I hold a Master's degree in Universal Design of ICT and a Bachelor's degree in Information Management System. Additionally, I have undertaken various personal projects to further solidify my foundation in this field.",
   },
 
   works: [

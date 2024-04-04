@@ -13,7 +13,7 @@ const Resume = () => {
   return (
     <div
       id="Resume"
-      className=" w-full lg:w-[80%] mx-auto lg:text-lg h-full pt-20"
+      className=" w-full lg:w-[80%] mx-auto lg:text-lg h-full py-20"
     >
       <h1 className=" text-center pb-4">Experience and Education</h1>
       <div className="w-[95%] mx-auto h-full px-1 py-4 lg:py-8 lg:px-10 shadow-2xl shadow-gray-700 flex flex-col gap-4 rounded-lg">
@@ -40,9 +40,7 @@ const Resume = () => {
               <h4 className="vertical-timeline-element-subtitle">
                 {item.company}
               </h4>
-              <p>
-              {item.location}
-              </p>
+              <p>{item.location}</p>
               <p>{item.responsibility}</p>
               <p>{item.skills}</p>
             </VerticalTimelineElement>

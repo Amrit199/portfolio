@@ -7,8 +7,8 @@ import { Data } from "../data";
 const About = () => {
   return (
     <AnimatePresence>
-      <div id="About" className="w-full h-full pt-20 overflow-hidden">
-        <div className="w-full h-full p-6 flex items-center justify-center">
+      <div id="About" className="w-full h-full md:h-screen flex items-center justify-center ">
+        <div className="w-full h-full py-20 md:py-6 md:p-6 flex items-center justify-center">
           <motion.div
             className="hidden lg:block lg:w-full"
             initial={{ opacity: 0, y: -80 }}
@@ -26,7 +26,7 @@ const About = () => {
             />
           </motion.div>
           <motion.div
-            className="w-full text-center flex flex-col gap-4"
+            className="w-full flex flex-col items-center justify-center text-center gap-4"
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut", type: "tween" }}
