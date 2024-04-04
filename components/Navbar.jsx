@@ -39,7 +39,6 @@ const Navbar = () => {
     }
   }, [shadow])
 
-  console.log(shadow)
   // className={
         //   shadow
         //     ? "w-full shadow-lg shadow-gray-600 h-14 bg-[#ecf0f3] fixed z-[40] p-3 flex items-center justify-between"

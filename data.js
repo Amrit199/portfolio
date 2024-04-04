@@ -43,26 +43,46 @@ export const Data = {
           img: receel,
           name: "Receel",
           link: "/Receel",
+          desc1:
+            "Discover the future of energy at Receel, your online destination for high-quality solar panels, inverters, batteries, regulators, and more. From cozy homes to expansive farms, find the perfect solar solution tailored to your needs. Shop with confidence and convenience, knowing you're investing in sustainable living. Visit Receel today and embrace the power of the sun!",
+          code: "https://github.com/Amrit199/receel",
+          demo: "https://receel.no/",
         },
         {
           img: accessiNor,
           name: "AccessiNor",
           link: "/AccessiNor",
+          desc1:
+            "Unlock the full potential of your website with AccessiNor, your go-to tool for ensuring accessibility for all users. From small websites to large web applications, AccessiNor empowers you to identify and address accessibility issues effortlessly. Whether it's ensuring color contrast compliance or conducting comprehensive audits and user testing, our platform provides the support you need to enhance your website's accessibility. Join the accessibility revolution with AccessCheck and create inclusive digital experiences for all.",
+          code: "https://github.com/Amrit199/accessinor_as",
+          demo: "https://accessinor-as.vercel.app/",
         },
         {
           img: miljø,
           name: "Miljø",
           link: "/Miljø",
+          desc1:
+            "Welcome to Miljø Renholdtjenester AS, your premier destination for top-notch cleaning services tailored to meet the needs of shopping centers, offices, schools, kindergartens, stores, clinics, and more. With Miljø Renholdtjenester, maintaining a pristine environment has never been easier. Our user-friendly website allows you to schedule services anytime, ensuring convenience and flexibility to suit your busy schedule. Experience the difference with Miljø Renholdtjenester and let us bring a touch of sparkle to your space.",
+          code: "https://github.com/Amrit199/cleaning_website",
+          demo: "https://cleaning-website-beta.vercel.app/",
         },
         {
           img: momo,
           name: "MOMO",
           link: "/Momo",
+          desc1:
+            "Craving convenience and delicious meals delivered right to your doorstep? Look no further than MOMO, your go-to online food service platform. MOMO offers a seamless ordering experience, allowing you to browse a mouthwatering selection of dishes and explore their full descriptions with just a few clicks. From tantalizing appetizers to hearty mains and decadent desserts, MOMO has something for every craving. Order now and indulge in culinary delights from the comfort of your home with MOMO.",
+          code: "https://github.com/Amrit199/momohub",
+          demo: "https://momohub.vercel.app/",
         },
         {
           img: webstudio,
           name: "WebStudio",
           link: "/Webstudio",
+          desc1:
+            "Elevate your online presence with WebStudio, your all-in-one hub for web development, design services, and outsourcing solutions. Whether you're a small business or a large enterprise, WebStudio is here to cater to your digital needs. Our platform offers a seamless experience, allowing you to access our services anytime, anywhere. From creating stunning websites to outsourcing your development projects, WebStudio is your trusted partner in achieving online success. Explore our offerings today and let WebStudio bring your digital vision to life.",
+          code: "https://github.com/Amrit199/webstudio",
+          demo: "https://webstudio-liard.vercel.app/",
         },
       ],
     },
@@ -74,11 +94,19 @@ export const Data = {
           img: gallery,
           name: "ImageGallery",
           link: "/Gallery",
+          desc1:
+            "Welcome to ImageGallery app, where the perfect image or video is just a click away. Whether you're seeking inspiration for a project, blog, or simply looking to enhance your digital content, ImageGallery has you covered. Our vast collection of high-quality images and videos is curated to meet all your creative needs. With seamless navigation and easy download options, finding and saving your favorites has never been easier. Explore ImageGallery today and unlock a world of visual possibilities.",
+          code: "https://github.com/Amrit199/Gallery",
+          demo: "https://gallery-image-react-tailwind.vercel.app/",
         },
         {
           img: weather,
           name: "TodaysWeather",
           link: "/Weather",
+          desc1:
+            "TodaysWeather has you covered. With our user-friendly platform, you can access current and future weather information anytime, anywhere. Say goodbye to unexpected weather surprises and hello to seamless planning with TodaysWeather. Visit us now and take control of your day with confidence.",
+          code: "https://github.com/Amrit199/weather-app-react-tailwind",
+          demo: "https://weather-app-react-tailwind-lf9w.vercel.app/",
         },
       ],
     },
@@ -171,8 +199,7 @@ export const Data = {
       img: receel,
       desc1:
         "Receel is a suppliers of solar panel and its necessary equipements such as inverter, battery, regulator, etc. This online store has been carefully designed to provide products informations effectively and efficiently to the customers.",
-      desc2:
-        "",
+      desc2: "",
       code: "https://github.com/Amrit199/receel",
       demo: "https://receel.no/",
       technologies: [
@@ -198,8 +225,7 @@ export const Data = {
       img: accessiNor,
       desc1:
         "AccessiNor is a Startups company which offers, a comprehensive web accessibility checker. This innovative product has been carefully designed to assist website owners and developers in ensuring compliance with both web accessibility standards and the stringent regulations set by the Norwegian government. Web accessibility checker goes beyond standard compliance checks by incorporating user experience and design considerations, with the ultimate aim of making the web more inclusive for all users",
-      desc2:
-        "",
+      desc2: "",
       code: "https://github.com/Amrit199/accessinor_as",
       demo: "https://accessinor-as.vercel.app/",
       technologies: [
@@ -229,8 +255,7 @@ export const Data = {
       img: miljø,
       desc1:
         "Miljø Renholdtjenester AS a cleaning company located in center of Oslo. Primary focus of this company is to provide high quality cleaning solutions and adaptable expertise that covers a wide range of commercial environments. Service offers in various locations including busy shopping malls, health clinics, restaurants, canteens, offices and shops.",
-      desc2:
-        "",
+      desc2: "",
       code: "https://github.com/Amrit199/cleaning_website",
       demo: "https://cleaning-website-beta.vercel.app/",
       technologies: [
@@ -376,11 +401,13 @@ export const Data = {
       ],
     },
   ],
-  
+
   about: {
     title: "About myself",
-    parag1: "I am passionate for creating visually stunning and highly functional web applications and websites. With a strong understanding of HTML, CSS and JavaScript, I have experience working with modern front-end frameworks and libraries such as React and Next.js. I am dedicated to staying up-to-date with the latest web developement trends and technologies, and always eager to learn new skills and improve my craft. I am highly motivated self-strater with a strong attention to detail and problem-solving skills. I am able to work well under pressure and a good team player with a positive attitude. I have a excellent communication skills and always willing to share my knowledge and collaborate with others to achieve a common goal.",
-    parag2: "I have a Master's degree in Universal Design of ICT and Bachelor's degree in Information Management System. I have a experience of working as a junior front-end developer for a year and worked on several personal projects to boost solid foundation in this field.", 
+    parag1:
+      "I am passionate for creating visually stunning and highly functional web applications and websites. With a strong understanding of HTML, CSS and JavaScript, I have experience working with modern front-end frameworks and libraries such as React and Next.js. I am dedicated to staying up-to-date with the latest web developement trends and technologies, and always eager to learn new skills and improve my craft. I am highly motivated self-strater with a strong attention to detail and problem-solving skills. I am able to work well under pressure and a good team player with a positive attitude. I have a excellent communication skills and always willing to share my knowledge and collaborate with others to achieve a common goal.",
+    parag2:
+      "I have a Master's degree in Universal Design of ICT and Bachelor's degree in Information Management System. I have a experience of working as a junior front-end developer for a year and worked on several personal projects to boost solid foundation in this field.",
   },
 
   works: [
@@ -389,8 +416,10 @@ export const Data = {
       company: "AccessiNor AS",
       role: "Frontend Developer",
       location: "Oslo, Norway",
-      responsibility: "Web developement, Visual Design, E-commerce developement, CMS, Project Management, Responsive web design",
-      skills: "Nextjs, Tailwind CSS, Sanity, Nodejs, Expressjs, TypeScript, MUI"
+      responsibility:
+        "Web developement, Visual Design, E-commerce developement, CMS, Project Management, Responsive web design",
+      skills:
+        "Nextjs, Tailwind CSS, Sanity, Nodejs, Expressjs, TypeScript, MUI",
     },
     {
       year: "March 2016 - March 2017",
@@ -398,7 +427,7 @@ export const Data = {
       role: "Junior Frontend Developer",
       location: "Kathmandu, Nepal",
       responsibility: "Responsive web design, web design, web development",
-      skills: "HTML, CSS, JavaScript, Reactjs"
+      skills: "HTML, CSS, JavaScript, Reactjs",
     },
     {
       year: "Jul 2014 - Feb 2016",
@@ -406,7 +435,8 @@ export const Data = {
       role: "Junior Assistant",
       location: "Kathmandu, Nepal",
       responsibility: "",
-      skills: "Teamwork, Technical Support, Maintenance & Repair, Microsoft Office"
+      skills:
+        "Teamwork, Technical Support, Maintenance & Repair, Microsoft Office",
     },
   ],
 
@@ -442,5 +472,5 @@ export const Data = {
       title: "Bokmål Norsk",
       level: "Limited working proficiency, completed A1 and A2",
     },
-  ]
+  ],
 };

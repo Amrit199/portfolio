@@ -4,6 +4,7 @@ import { Tab } from "@headlessui/react";
 import ProjectCard from "../../components/ProjectCard";
 import { Data } from "../../data";
 import ProjectSwiper from "../../components/ProjectSwiper";
+import PortfolioScroll from "../../components/PortfolioScroll";
 
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
@@ -38,7 +39,7 @@ const Projects = () => {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "w-full md:w-[95%] h-full mx-auto rounded-2xl shadow-2xl px-6 py-16 lg:py-20 bg-white flex flex-col md:flex-row items-center justify-center gap-14 flex-wrap"
+                "w-full md:w-[95%] h-full mx-auto rounded-2xl shadow-2xl p-3 md:p-6 bg-[#1f1f1f] flex flex-col md:flex-row items-center justify-center gap-14 flex-wrap"
               )}
             >
               {/* {posts.projects.map((post, id) => (
@@ -47,7 +48,8 @@ const Projects = () => {
                 </div>
 
               ))} */}
-              <ProjectSwiper item={posts}/>
+              {/* <ProjectSwiper item={posts}/> */}
+              <PortfolioScroll item={posts}/>
             </Tab.Panel>
           ))}
         </Tab.Panels>

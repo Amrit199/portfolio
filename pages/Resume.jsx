@@ -15,8 +15,8 @@ const Resume = () => {
       id="Resume"
       className=" w-full lg:w-[80%] mx-auto lg:text-lg h-full pt-20"
     >
-      <h1 className=" text-center pb-4">Resume</h1>
-      <div className="w-[90%] mx-auto h-full px-1 py-4 lg:py-8 lg:px-10 shadow-2xl shadow-gray-700 flex flex-col gap-4 rounded-lg">
+      <h1 className=" text-center pb-4">Experience and Education</h1>
+      <div className="w-[95%] mx-auto h-full px-1 py-4 lg:py-8 lg:px-10 shadow-2xl shadow-gray-700 flex flex-col gap-4 rounded-lg">
         {/* Name and icons */}
         <div className="w-full p-3 lg:p-6 bg-white flex items-center justify-center rounded-xl gap-6">
           {Data.socialicons.map((icon, id) => (
