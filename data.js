@@ -429,15 +429,6 @@ export const Data = {
       responsibility: "Responsive web design, web design, web development",
       skills: "HTML, CSS, JavaScript, Reactjs",
     },
-    {
-      year: "Jul 2014 - Feb 2016",
-      company: "Nepal Bayern Electric Pvt. Ltd",
-      role: "Junior Assistant",
-      location: "Kathmandu, Nepal",
-      responsibility: "",
-      skills:
-        "Teamwork, Technical Support, Maintenance & Repair, Microsoft Office",
-    },
   ],
 
   educations: [

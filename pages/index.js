@@ -44,10 +44,10 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
-      <About />
-      <Skills />
       <Projects />
       <Resume />
+      <About />
+      <Skills />
       <Contact />
       <Footer />
       <Analytics />

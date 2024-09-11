@@ -49,7 +49,7 @@ const Main = () => {
         </div>
         <div className="w-full h-full absolute right-0 bottom-0">
           {/* bg can be added here */}
-          <ParticlesContainer />
+          {/* <ParticlesContainer /> */}
         </div>
       </div>
     </AnimatePresence>
