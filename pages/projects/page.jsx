@@ -13,7 +13,7 @@ const classNames = (...classes) => {
 const Projects = () => {
   return (
     <div id="Projects" className="w-full h-full pt-20 md:py-16">
-      <h1 className="text-center">PROJECTS</h1>
+      <h1 className="px-9">Explore My Latest Works</h1>
       <Tab.Group>
         <Tab.List className="w-full md:w-[80%] mx-auto flex items-center justify-center rounded-xl gap-2 py-6">
           {" "}

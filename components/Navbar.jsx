@@ -47,22 +47,20 @@ const Navbar = () => {
   return (
     <div className="w-full">
       <div
-        className={`fixed ${shadow === "down" ? "-top-24" : "top-0"} w-full h-20 bg-[#ecf0f3] text-gray-600 py-4 px-14 z-40 flex items-center justify-between transition-all duration-500"`}
+        className={`fixed ${shadow === "down" ? "-top-24" : "top-0"} w-full h-20 bg-[#ecf0f3] text-gray-600 py-4 px-4 md:px-14 z-40 flex items-center justify-between transition-all duration-500"`}
       >
         <div className="w-full">
-          <Link className=" cursor-pointer" to="/">
+          <Link className=" cursor-pointer flex items-center gap-2" to="/">
             <Image
               src={logo}
               alt="/"
               className="w-14 rounded-full object-fit"
             />
+            <h1 className="text-[#1f1f1f]">Amrit Tamang</h1>
           </Link>
         </div>
         {/* Nav link for < 800px screen */}
         <div className="w-full hidden md:flex items-center justify-between gap-3 text-xl">
-          <Link to="/" className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer">
-            Home
-          </Link>
           <Link
             to="About"
             className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
@@ -81,12 +79,7 @@ const Navbar = () => {
           >
             Projects
           </Link>
-          <Link
-            to="Resume"
-            className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
-          >
-            Resume
-          </Link>
+          
           <Link
             to="Contact"
             className="hover:bg-white hover:text-black transition-all delay-150 p-2 rounded-xl cursor-pointer"
@@ -123,13 +116,7 @@ const Navbar = () => {
       >
         <div>
           <div className="flex flex-col items-center pt-20 pb-4 justify-center gap-3 text-xl">
-            <Link
-              to="/"
-              className="hover:bg-white p-2 rounded-xl cursor-pointer"
-              onClick={handleMenu}
-            >
-              Home
-            </Link>
+            
             <Link
               to="About"
               className="hover:bg-white p-2 rounded-xl cursor-pointer"
@@ -151,13 +138,7 @@ const Navbar = () => {
             >
               Projects
             </Link>
-            <Link
-              to="Resume"
-              className="hover:bg-white p-2 rounded-xl cursor-pointer"
-              onClick={handleMenu}
-            >
-              Resume
-            </Link>
+            
             <Link
               to="Contact"
               className="hover:bg-white p-2 rounded-xl cursor-pointer"
