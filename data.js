@@ -1,6 +1,6 @@
 // projects images
 import receel from "./public/assets/projects/receel.png";
-import accessiNor from "./public/assets/projects/accessiNor.png";
+import accessiNor from "./public/assets/projects/accessinoricon.png";
 import gallery from "./public/assets/projects/gallery.png";
 import momo from "./public/assets/projects/momo.png";
 import weather from "./public/assets/projects/weather.png";
@@ -44,7 +44,7 @@ export const Data = {
           name: "Receel",
           link: "/Receel",
           desc1:
-            "Discover the future of energy at Receel, your online destination for high-quality solar panels, inverters, batteries, regulators, and more. From cozy homes to expansive farms, find the perfect solar solution tailored to your needs. Shop with confidence and convenience, knowing you're investing in sustainable living. Visit Receel today and embrace the power of the sun!",
+            "Receel is an online platform for purchasing solar panels, batteries, inverters, and accessories for homes, cottages, farmhouses, and boats. The goal was to create a user-friendly and simple e-commerce website.",
           code: "https://github.com/Amrit199/receel",
           demo: "https://receel.no/",
         },
@@ -193,15 +193,75 @@ export const Data = {
   projects: [
     {
       name: "Receel",
-      title: "Receel AS",
+      title: "Receel",
       intro:
-        "Introducing solar panel and equipments e-website, built using of NextJS, Tailwind, stripe and Sanity.io. This website is designed to provide an interactive and visually pleasing experience for users.",
+        "Receel is an online platform for purchasing solar panels, batteries, inverters, and accessories for homes, cottages, farmhouses, and boats. The goal was to create a user-friendly and simple e-commerce website.",
       img: receel,
-      desc1:
-        "Receel is a suppliers of solar panel and its necessary equipements such as inverter, battery, regulator, etc. This online store has been carefully designed to provide products informations effectively and efficiently to the customers.",
-      desc2: "",
+      objective:
+        "The manager of Receel, previously operating a physical store, needed an online platform that would make it easy for customers to browse, explore, and purchase products related to solar energy for homes, boats, and farmhouses. The website had to be simple, intuitive, and easy to navigate for a wide range of customers.",
       code: "https://github.com/Amrit199/receel",
       demo: "https://receel.no/",
+      projectGoals: {
+        objective:
+          "The manager of Receel, previously operating a physical store, needed an online platform that would make it easy for customers to browse, explore, and purchase products related to solar energy for homes, boats, and farmhouses. The website had to be simple, intuitive, and easy to navigate for a wide range of customers.",
+        challenges: [
+          "Creating a clean and simple design that still offers easy access to detailed information on various solar products and packages.",
+          "Implementing e-commerce functionality with a content management system (CMS) to allow the store manager to easily update products, prices, and packages.",
+          "Building separate sections/pages for houses, boats, and farmhouses, each with specific products and solutions, without overwhelming the user with too much information.",
+        ],
+      },
+      solutionAndApproach: {
+        process: [
+          {
+            step: "Research and Planning",
+            description:
+              "Collaborated with the store manager to identify the key products and services. We identified three distinct customer groups (house owners, boat owners, and farmhouses) and structured the website accordingly.",
+          },
+          {
+            step: "Design and Architecture",
+            description:
+              "The website was built using Next.js for performance and scalability, along with Tailwind CSS for a clean and responsive design. Sanity CMS was chosen to manage the content dynamically, allowing the store manager to update the catalog of products and packages without requiring technical skills.",
+          },
+          {
+            step: "Development",
+            description:
+              "Next.js was used to create fast-loading pages with server-side rendering (SSR) for optimal performance. Tailwind CSS helped create a modern, clean, and responsive UI. Sanity CMS was integrated to handle the product data, allowing the manager to add, remove, and modify products. Custom schemas were built in Sanity to reflect the structure of solar products, packages, and accessories.",
+          },
+          {
+            step: "Testing and Deployment",
+            description:
+              "The website was rigorously tested for mobile responsiveness and cross-browser compatibility. The site was deployed with a CI/CD pipeline, ensuring efficient updates.",
+          },
+        ],
+        screenshotsAndCodeSnippets: [
+          "Include screenshots of the homepage, product pages, or checkout process",
+          "Key code snippets from integrating Sanity CMS or custom React components for product management.",
+        ],
+      },
+      keyFeatures: [
+        "Simple, Clean Design: The website was designed with a minimalist approach to ensure it was easy to navigate, without overwhelming users with technical details.",
+        "Dynamic Product Management: Using Sanity CMS, the manager can add, remove, and edit products, ensuring that the inventory is always up to date without needing developer intervention.",
+        "E-commerce Functionality: Users can browse products, add them to their cart, and complete purchases seamlessly.",
+        "Product Categorization: Separate pages for houses, boats, and farmhouses allow users to find the right products tailored to their specific needs.",
+        "Mobile-Responsive Design: Tailwind CSS ensured the website was fully responsive, providing a smooth experience for users on mobile devices.",
+      ],
+      resultsAndImpact: {
+        outcomes:
+          "The website successfully transitioned the business from a physical store to a digital presence, providing an additional revenue stream. Customers now have easy access to Receel's products and can make online purchases directly from the website.",
+        metrics:
+          "Post-launch, the website saw an increase in customer inquiries and purchases through the online store. Sales from remote customers, particularly boat owners, saw a significant rise after the website launch.",
+        lessonsLearned:
+          "Working with Sanity CMS provided me with valuable insights into headless CMS integration, improving my skills in building flexible and dynamic content structures for e-commerce websites.",
+      },
+      reflectionAndGrowth: {
+        whatYouEnjoyed:
+          "I enjoyed working on the dynamic product management system and integrating the CMS, which gave the store manager the ability to manage their products with ease. The project also allowed me to refine my skills in building user-friendly interfaces and e-commerce functionalities.",
+        skillsDeveloped: [
+          "Advanced my skills in Next.js and Tailwind CSS for performance optimization and responsive design.",
+          "Gained deeper knowledge in integrating headless CMS solutions like Sanity CMS for flexible content management.",
+          "Improved my ability to structure websites with intuitive UX, focusing on simplifying complex product catalogs for end users.",
+        ],
+      },
       technologies: [
         {
           img: next,

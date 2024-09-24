@@ -35,6 +35,16 @@ const ProjectItems = ({ item }) => {
           >
             <h2>{item.name}</h2>
             <p>{item.desc1}</p>
+            <div className="flex items-center gap-6">
+            <Link href={`/projects/${item.name}`}>
+              <motion.button
+                className="bg-white text-black px-4 rounded-xl font-semibold"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Case Study
+              </motion.button>
+            </Link>
             <Link href={item.demo}>
               <motion.button
                 className="bg-white text-black px-4 rounded-xl font-semibold"
@@ -44,20 +54,8 @@ const ProjectItems = ({ item }) => {
                 See the demo &rarr;
               </motion.button>
             </Link>
+            </div>
           </motion.div>
-          <div className="w-full md:hidden flex flex-col items-start justify-center gap-1">
-            <h2>{item.name}</h2>
-            <p>{item.desc1}</p>
-            <Link href={item.demo}>
-              <motion.button
-                className="bg-white text-black px-4 rounded-xl font-semibold"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                See the demo &rarr;
-              </motion.button>
-            </Link>
-          </div>
         </div>
       </div>
     </section>
@@ -84,7 +82,10 @@ const PortfolioScroll = ({ item }) => {
   return (
     <div className=" w-full h-full relative" ref={ref}>
       <div className=" sticky top-16 left-0 py-6">
-        <motion.div style={{ scaleX }} className="h-2 bg-[#0077B5]"></motion.div>
+        <motion.div
+          style={{ scaleX }}
+          className="h-2 bg-[#0077B5]"
+        ></motion.div>
       </div>
       <div className="flex flex-col items-center justify-center gap-14 w-full h-full">
         {item?.projects.map((post, index) => (
