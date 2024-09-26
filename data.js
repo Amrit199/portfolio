@@ -1,5 +1,5 @@
 // projects images
-import receel from "./public/assets/projects/receel.png";
+import receel from "./public/assets/projects/receel/receelpage.png";
 import accessiNor from "./public/assets/projects/accessinoricon.png";
 import gallery from "./public/assets/projects/gallery.png";
 import momo from "./public/assets/projects/momo.png";
@@ -7,6 +7,9 @@ import weather from "./public/assets/projects/weather.png";
 import wordpressportfolio from "./public/assets/projects/wordpressportfolio.png";
 import webstudio from "./public/assets/projects/webstudio.png";
 import miljø from "./public/assets/projects/Miljo.png";
+import receel1 from "./public/assets/projects/receel/fullreceelpage.png"
+import receel2 from "./public/assets/projects/receel/hyttapage.png"
+import receel3 from "./public/assets/projects/receel/hyttaproductpage.png"
 
 // skills images
 import css from "./public/assets/skills/css.png";
@@ -276,6 +279,11 @@ export const Data = {
           alt: "Sanity",
         },
       ],
+      screenshots: [
+        { src: receel1 },
+        { src: receel2 },
+        { src: receel3 }
+      ],
     },
     {
       name: "AccessiNor",
@@ -287,7 +295,7 @@ export const Data = {
         "AccessiNor is a Startups company which offers, a comprehensive web accessibility checker. This innovative product has been carefully designed to assist website owners and developers in ensuring compliance with both web accessibility standards and the stringent regulations set by the Norwegian government. Web accessibility checker goes beyond standard compliance checks by incorporating user experience and design considerations, with the ultimate aim of making the web more inclusive for all users",
       desc2: "",
       code: "https://github.com/Amrit199/accessinor_as",
-      demo: "https://accessinor-as.vercel.app/",
+      demo: "https://accessinor.no/",
       technologies: [
         {
           img: next,

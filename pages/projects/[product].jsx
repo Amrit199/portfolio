@@ -127,31 +127,50 @@ export default function Project({}) {
           </div>
         )}
 
+        {/* screenshots */}
+        {project.screenshots && project.screenshots.length > 0 && (
+          <div>
+            <h2 className="text-2xl font-semibold bg-white p-3 rounded-xl shadow-lg">
+              Screenshots
+            </h2>
+            <div className="flex flex-wrap gap-4 mt-4">
+              {project.screenshots.slice(0, 3).map((screenshot, index) => (
+                <div key={index} className="w-[30%]">
+                  <Image
+                    src={screenshot.src}
+                    alt={`Screenshot ${index + 1}`}
+                    className="w-full h-auto rounded-lg transition-transform hover:scale-105 duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Results and Impact */}
         {project.resultsAndImpact && (
-        <div className="text-lg">
-          <h2 className="text-2xl font-semibold bg-white p-3 rounded-xl shadow-lg">
-            Results and Impact
-          </h2>
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              <p className="mb-4">
-                Outcomes: {project?.resultsAndImpact?.outcomes}
-              </p>
-            </li>
-            <li>
-              <p className="mb-4">
-                Metrics: {project?.resultsAndImpact?.metrics}
-              </p>
-            </li>
-            <li>
-              <p className="mb-4">
-                Lessons Learned: {project?.resultsAndImpact?.lessonsLearned}
-              </p>
-            </li>
-          </ul>
-        </div>
-
+          <div className="text-lg">
+            <h2 className="text-2xl font-semibold bg-white p-3 rounded-xl shadow-lg">
+              Results and Impact
+            </h2>
+            <ul className="list-disc pl-5 mt-2">
+              <li>
+                <p className="mb-4">
+                  Outcomes: {project?.resultsAndImpact?.outcomes}
+                </p>
+              </li>
+              <li>
+                <p className="mb-4">
+                  Metrics: {project?.resultsAndImpact?.metrics}
+                </p>
+              </li>
+              <li>
+                <p className="mb-4">
+                  Lessons Learned: {project?.resultsAndImpact?.lessonsLearned}
+                </p>
+              </li>
+            </ul>
+          </div>
         )}
       </div>
     </div>
