@@ -56,7 +56,7 @@ const Navbar = () => {
               alt="/"
               className="w-14 rounded-full object-fit"
             />
-            <h1 className="text-[#1f1f1f]">Amrit Tamang</h1>
+            <h1 className="text-[#1f1f1f] text-xl md:text-2xl">Amrit Tamang</h1>
           </Link>
         </div>
         {/* Nav link for < 800px screen */}

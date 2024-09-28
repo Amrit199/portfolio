@@ -45,7 +45,7 @@ const ProjectItems = ({ item }) => {
                 Case Study
               </motion.button>
             </Link>
-            <Link href={item.demo}>
+            <Link href={item.demo} target="_blank">
               <motion.button
                 className="bg-white text-black px-4 rounded-xl font-semibold"
                 whileHover={{ scale: 1.1 }}

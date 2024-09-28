@@ -10,6 +10,8 @@ import miljø from "./public/assets/projects/Miljo.png";
 import receel1 from "./public/assets/projects/receel/fullreceelpage.png"
 import receel2 from "./public/assets/projects/receel/hyttapage.png"
 import receel3 from "./public/assets/projects/receel/hyttaproductpage.png"
+import accessinor1 from './public/assets/projects/accessinor/AccessiNorhomepage.png'
+import accessinor2 from './public/assets/projects/accessinor/accessinorfullpage.png'
 
 // skills images
 import css from "./public/assets/skills/css.png";
@@ -30,6 +32,9 @@ import sass from "./public/assets/projects/sass.png";
 import pixabay from "./public/assets/projects/pixabay.png";
 import framer from "./public/assets/projects/framer.png";
 import wordpress from "./public/assets/skills/wordpress.png";
+import SEO from './public/assets/skills/SEO.png'
+import elementor from './public/assets/skills/elementor.png'
+import bootstrap from './public/assets/skills/bootstrap.png'
 
 // social icons
 import { BsLinkedin, BsGithub } from "react-icons/bs";
@@ -56,9 +61,9 @@ export const Data = {
           name: "AccessiNor",
           link: "/AccessiNor",
           desc1:
-            "Unlock the full potential of your website with AccessiNor, your go-to tool for ensuring accessibility for all users. From small websites to large web applications, AccessiNor empowers you to identify and address accessibility issues effortlessly. Whether it's ensuring color contrast compliance or conducting comprehensive audits and user testing, our platform provides the support you need to enhance your website's accessibility. Join the accessibility revolution with AccessCheck and create inclusive digital experiences for all.",
+            "AccessiNor is a digital agency offering services such as website development, e-commerce solutions, SEO optimization, Google marketing, social media management, and graphic design. The website was built using WordPress to ensure quick deployment and ease of modification for team members.",
           code: "https://github.com/Amrit199/accessinor_as",
-          demo: "https://accessinor-as.vercel.app/",
+          demo: "https://accessinor.no/",
         },
         {
           img: miljø,
@@ -251,8 +256,6 @@ export const Data = {
       resultsAndImpact: {
         outcomes:
           "The website successfully transitioned the business from a physical store to a digital presence, providing an additional revenue stream. Customers now have easy access to Receel's products and can make online purchases directly from the website.",
-        metrics:
-          "Post-launch, the website saw an increase in customer inquiries and purchases through the online store. Sales from remote customers, particularly boat owners, saw a significant rise after the website launch.",
         lessonsLearned:
           "Working with Sanity CMS provided me with valuable insights into headless CMS integration, improving my skills in building flexible and dynamic content structures for e-commerce websites.",
       },
@@ -289,7 +292,7 @@ export const Data = {
       name: "AccessiNor",
       title: "AccessiNor AS",
       intro:
-        "Introducing web accessibility checker website, built using of NextJS, Tailwind, TypeScript and Sanity. This website is designed to provide an interactive and visually pleasing experience for users.",
+        "AccessiNor is a digital agency offering services such as website development, e-commerce solutions, SEO optimization, Google marketing, social media management, and graphic design. The website was built using WordPress to ensure quick deployment and ease of modification for team members.",
       img: accessiNor,
       desc1:
         "AccessiNor is a Startups company which offers, a comprehensive web accessibility checker. This innovative product has been carefully designed to assist website owners and developers in ensuring compliance with both web accessibility standards and the stringent regulations set by the Norwegian government. Web accessibility checker goes beyond standard compliance checks by incorporating user experience and design considerations, with the ultimate aim of making the web more inclusive for all users",
@@ -298,21 +301,78 @@ export const Data = {
       demo: "https://accessinor.no/",
       technologies: [
         {
-          img: next,
-          alt: "NextJS",
+          img: wordpress,
+          alt: "WordPress",
         },
         {
-          img: tailwind,
-          alt: "Tailwind CSS",
+          img: elementor,
+          alt: "Elementor",
         },
         {
-          img: typescript,
-          alt: "TypeScript",
-        },
-        {
-          img: sanity,
-          alt: "Sanity",
-        },
+          img: SEO,
+          alt: "SEO Plugins (Yoast SEO)",
+        }
+      ],
+      projectGoals: {
+        objective:
+          "The main goal of AccessiNor was to establish a comprehensive digital agency website that could cater to various client needs, such as website building, e-commerce, SEO optimization, and digital marketing services. Additionally, the site needed to be built quickly and designed to be easily editable by other team members, even those without a technical background.",
+        challenges: [
+          "Building the site quickly without compromising on quality or performance.",
+          "Ensuring that the website was flexible enough to be modified by team members who may not be familiar with complex development tools.",
+          "Optimizing the site for both on-page and off-page SEO from the start.",
+        ],
+      },
+      solutionAndApproach: {
+        process: [
+          {
+            step: "Research and Planning",
+            description:
+              "I researched different CMS options, and WordPress stood out due to its user-friendly interface, extensive plugin support, and flexibility in handling content updates by non-developers. The objective was to create a visually appealing yet functional website with a strong focus on SEO.",
+          },
+          {
+            step: "Design and Architecture",
+            description:
+              "The website was designed with a focus on simplicity and clarity. I used the Elementor page builder to give the team the ability to easily create and update pages without needing to touch the code. The site’s design was optimized for both desktop and mobile devices to ensure responsiveness.",
+          },
+          {
+            step: "Development",
+            description:
+              "I chose WordPress due to its extensive customization options and rich plugin ecosystem. I integrated SEO plugins such as Yoast SEO to ensure that both on-page and off-page SEO strategies were easily manageable. Additionally, I used Google Analytics to track website traffic and performance.",
+          },
+          {
+            step: "Testing and Deployment",
+            description:
+              "Before launching, I tested the website’s speed, responsiveness, and SEO optimization. The WordPress backend allowed for easy deployment and quick updates, making it efficient for future improvements.",
+          },
+        ],
+        screenshotsAndCodeSnippets: [
+          "Include screenshots of the homepage, product pages, or checkout process",
+          "Key code snippets from integrating Sanity CMS or custom React components for product management.",
+        ],
+      },
+      keyFeatures: [
+        "SEO Optimization: Implemented SEO tools like Yoast SEO to enhance search engine visibility, including on-page optimization such as meta descriptions, alt tags, and keyword focus.",
+        "Easy Content Management: By using Elementor, I ensured that team members could easily modify content, create new pages, or update existing ones without needing advanced coding skills.",
+        "Google Marketing and Analytics: Integrated Google Analytics and marketing tools for tracking performance and running targeted campaigns.",
+      ],
+      resultsAndImpact: {
+        outcomes:
+          "The website was successfully launched in a short time frame, meeting the project's urgency. The use of WordPress and Elementor allowed non-technical team members to make changes and updates with ease. The site saw immediate improvement in search engine rankings due to the on-page and off-page SEO efforts, along with enhanced traffic from Google marketing campaigns.",
+        lessonsLearned:
+          "This project reinforced the importance of choosing the right tools for the job. WordPress and its ecosystem were perfect for this project due to the ease of use, quick deployment, and powerful SEO capabilities.",
+      },
+      reflectionAndGrowth: {
+        whatYouEnjoyed:
+          "I enjoyed working on the dynamic product management system and integrating the CMS, which gave the store manager the ability to manage their products with ease. The project also allowed me to refine my skills in building user-friendly interfaces and e-commerce functionalities.",
+        skillsDeveloped: [
+          "Advanced my skills in Next.js and Tailwind CSS for performance optimization and responsive design.",
+          "Gained deeper knowledge in integrating headless CMS solutions like Sanity CMS for flexible content management.",
+          "Improved my ability to structure websites with intuitive UX, focusing on simplifying complex product catalogs for end users.",
+        ],
+      },
+      screenshots: [
+        { src: accessinor1 },
+        { src: accessinor2 },
       ],
     },
     {
@@ -533,3 +593,37 @@ export const Data = {
     },
   ],
 };
+
+// data/skills.js
+export const frontendSkills = [
+  { name: "React", icon: react },
+  { name: "Next.js", icon: next },
+  { name: "Redux", icon: redux },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Material UI", icon: material },
+  { name: "WordPress", icon: wordpress },
+  { name: "Bootstrap", icon: bootstrap }
+];
+
+export const languages = [
+  { name: "HTML", icon: html },
+  { name: "CSS", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
+]
+
+export const backendSkills = [
+  { name: "Node.js", icon: nodejs },
+  { name: "Firebase", icon: firebase },
+  { name: "Sanity", icon: sanity },
+];
+
+export const designTools = [
+  { name: "Figma", icon: figma },
+  { name: "Elementor", icon: elementor },
+];
+
+export const versionControl = [
+  { name: "GitHub", icon: github },
+];
+
