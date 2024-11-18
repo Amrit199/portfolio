@@ -35,6 +35,7 @@ import wordpress from "./public/assets/skills/wordpress.png";
 import SEO from './public/assets/skills/SEO.png'
 import elementor from './public/assets/skills/elementor.png'
 import bootstrap from './public/assets/skills/bootstrap.png'
+import express from './public/assets/skills/expressjs.png'
 
 // social icons
 import { BsLinkedin, BsGithub } from "react-icons/bs";
@@ -614,6 +615,7 @@ export const languages = [
 
 export const backendSkills = [
   { name: "Node.js", icon: nodejs },
+  { name: "Express.js", icon: express },
   { name: "Firebase", icon: firebase },
   { name: "Sanity", icon: sanity },
 ];
